@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "pack_format": 34,
+    "supported_formats": {
+      "min_inclusive": 34,
+      "max_inclusive": 64
+    },
+    "min_format": 34,
+    "max_format": 64,
+    "description": "§6§liLike2Moveit §r§a§lv1.0§r\n§7Lively mob animations · FA-compatible · EMF/ETF\n§8Villager · Golem · Wolf · Cat · Chicken · Fox · Pig"
+  }
+}
