@@ -60,6 +60,15 @@ resourcePacks:["vanilla","Fresh Animations","Fresh Animations Extensions","iLike
 If iLike2Moveit ends up **below** FA, Fresh Animations' models win and you will see no change whatsoever.
 That is the single most common installation mistake.
 
+<p align="center">
+  <img src="screenshots/load-order.png" alt="A correct resource pack order, with iLike2Moveit above Fresh Animations" width="420">
+</p>
+
+The `Weskersons3DItems` entry at the top of that screenshot is **optional and not part of this pack**. It
+gives villagers and foxes 3D held items instead of flat ones, but it needs the companion mod plus
+Modefite and Puzzle. Without those, leave it out — held items render in 2D, which is the expected
+fallback.
+
 ---
 
 ## Mobs covered so far
@@ -152,9 +161,9 @@ Almost always the `asmMaths` setting. Confirm it's `false`, restart, and check t
 **A mob still looks like plain Fresh Animations.**
 It probably isn't covered yet. Check the roster above; if it's not listed, FA is doing its job.
 
-**Magenta or missing textures on held items.**
-That's the optional 3D item stack, not this pack. It needs Modefite and Puzzle; without them items
-render in 2D, which is the expected fallback.
+**Held items look flat.**
+That's expected without the optional 3D item setup — see the note under the load-order screenshot. The
+2D fallback is deliberate, and you should never get a magenta cube.
 
 ---
 
