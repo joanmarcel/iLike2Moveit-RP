@@ -94,18 +94,24 @@ This pack does **not** work on its own. It needs the OptiFine CEM implementation
 `pack.mcmeta` declares `pack_format 34` with `supported_formats 34–64`. Other loaders and Minecraft
 versions may work, but the combination above is the only one verified.
 
-### Required config change
+### Required: turn off `asmMaths`
 
-Open `config/entity_model_features.json` and set:
+**The villager will not animate until EMF's `asmMaths` option is off.** Two ways to get there — pick one:
+
+**Either install the iLike2Moveit companion mod.** It turns the option off for you at load time, in
+memory, and never rewrites your config file. Nothing else to do.
+<!-- TODO: link the companion mod's download page here once it's published. -->
+
+**Or edit the config yourself.** Open `config/entity_model_features.json` and set:
 
 ```json
 "asmMaths": false
 ```
 
-**Without this the villager will not animate.** EMF 3.x compiles each animation into a single bytecode
-method, and this pack's animation block (~152k characters) exceeds the JVM's 64 KB per-method limit,
-throwing `MethodTooLargeException`. Setting `asmMaths` to `false` makes EMF use its expression
-interpreter instead, which has no such limit. It costs slightly more CPU and works correctly.
+**Why it's needed.** EMF 3.x compiles each animation into a single bytecode method, and this pack's
+animation block (~152k characters) exceeds the JVM's 64 KB per-method limit, throwing
+`MethodTooLargeException`. With `asmMaths` off, EMF uses its expression interpreter instead, which has no
+such limit. It costs slightly more CPU and works correctly.
 
 Do not mix EMF 2.x with ETF 7.x — that combination fails with
 `NoSuchMethodError: EntityIntLRU.defaultReturnValue`.
@@ -115,18 +121,21 @@ Do not mix EMF 2.x with ETF 7.x — that combination fails with
 ## Installation
 
 1. Install **EMF 3.2.4** and **ETF 7.1** into `mods/`.
-2. Set `"asmMaths": false` in `config/entity_model_features.json` (see above).
+2. Install the companion mod, **or** set `"asmMaths": false` yourself (see above). One or the other —
+   without it the villager stands still.
 3. Download `iLike2Moveit-vX.Y.zip` from the [Releases](../../releases) page.
 4. Drop it into your `resourcepacks/` folder.
 5. Enable it in **Options → Resource Packs**, and make sure it sits **above Fresh Animations**
    (see [Load order matters](#load-order-matters)).
 
-### Optional companion mod
+### The companion mod
 
-A separate client-side mod adds behaviour the resource pack alone cannot express: the trade item
-following the villager's hands, wolf reunion and cat lie-down signals, and warm/cold/rooster chicken
-compatibility on Java 1.21.1. It requires VanillaBackport 1.1.7.10 and Platform 1.3.3. The pack works
-without it — you simply won't get those extras.
+A separate client-side mod does two things. It handles the `asmMaths` setting for you, and it adds
+behaviour the resource pack alone cannot express: the trade item following the villager's hands, wolf
+reunion and cat lie-down signals, and warm/cold/rooster chicken compatibility on Java 1.21.1. It requires
+VanillaBackport 1.1.7.10 and Platform 1.3.3.
+
+The pack works without it, as long as you set `asmMaths` yourself — you just won't get those extras.
 
 ---
 
