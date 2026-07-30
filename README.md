@@ -1,4 +1,15 @@
-# iLike2Moveit
+<p align="center">
+  <img src="pack.png" alt="iLike2Moveit" width="180">
+</p>
+
+<h1 align="center">iLike2Moveit</h1>
+
+<p align="center">
+  <a href="https://github.com/joanmarcel/iLike2Moveit-RP/releases/latest"><img src="https://img.shields.io/github/v/release/joanmarcel/iLike2Moveit-RP?label=release" alt="Latest release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue" alt="License"></a>
+  <img src="https://img.shields.io/badge/Minecraft-1.21.1-brightgreen" alt="Minecraft 1.21.1">
+  <img src="https://img.shields.io/badge/requires-EMF%20%2B%20ETF-orange" alt="Requires EMF and ETF">
+</p>
 
 A Minecraft **Java Edition** resource pack that brings livelier, more expressive animation to vanilla
 mobs, using OptiFine CEM through the **EMF + ETF** mods.
@@ -8,7 +19,22 @@ time, and everything not covered yet keeps animating through FA. The roster grow
 
 Inspired by Fresh Animations and AnS style.
 
-<!-- TODO: add screenshots here before promoting the Modrinth page. One per mob works well. -->
+<!--
+GALLERY — uncomment this block once the files exist in screenshots/.
+See screenshots/README.md for the shot list and the capture settings.
+
+## Gallery
+
+| | |
+|:---:|:---:|
+| ![Villager](screenshots/villager.png) | ![Iron Golem](screenshots/iron-golem.png) |
+| **Villager** — biome and profession outfits | **Iron Golem** — walk cycle and pelvis sway |
+| ![Wolf](screenshots/wolf.png) | ![Cat](screenshots/cat.png) |
+| **Wolf** — sit and stand-up transitions | **Cat** — 11 breeds |
+| ![Chicken](screenshots/chicken.png) | ![Fox](screenshots/fox.png) |
+| **Chicken** — hen, chick, rooster | **Fox** — run, sit, sleep, stalk |
+-->
+
 
 ---
 
