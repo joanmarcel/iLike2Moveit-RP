@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Installation and requirements
+    url: https://github.com/joanmarcel/iLike2Moveit-RP#requirements
+    about: EMF/ETF versions, the required asmMaths setting, and load order — read this first.

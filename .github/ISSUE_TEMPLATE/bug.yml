@@ -1,0 +1,75 @@
+name: Rendering bug
+description: A mob looks wrong, doesn't animate, or has broken textures
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing: most "nothing happens" reports are load order. Check that iLike2Moveit sits
+        **above** Fresh Animations in Options → Resource Packs.
+
+  - type: dropdown
+    id: mob
+    attributes:
+      label: Which mob?
+      options:
+        - Villager
+        - Iron Golem
+        - Wolf
+        - Cat
+        - Chicken
+        - Fox
+        - Pig
+        - Several / not sure
+    validations:
+      required: true
+
+  - type: input
+    id: pack-version
+    attributes:
+      label: Pack version
+      description: Shown in the in-game resource pack list, e.g. v1.0
+      placeholder: v1.0
+    validations:
+      required: true
+
+  - type: input
+    id: emf-etf
+    attributes:
+      label: EMF and ETF versions
+      placeholder: EMF 3.2.4, ETF 7.1
+    validations:
+      required: true
+
+  - type: input
+    id: minecraft
+    attributes:
+      label: Minecraft version and loader
+      placeholder: 1.21.1, NeoForge
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happens
+    attributes:
+      label: What happens, and what you expected instead
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag an image in. A rendering bug without a picture is very hard to act on.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: iLike2Moveit is above Fresh Animations in my load order
+          required: true
+        - label: '"asmMaths" is set to false in config/entity_model_features.json'
+          required: true

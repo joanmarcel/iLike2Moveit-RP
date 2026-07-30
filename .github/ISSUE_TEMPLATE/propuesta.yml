@@ -1,0 +1,28 @@
+name: Suggestion
+description: Propose a new mob, a variant, or a change to an existing one
+labels: ["suggestion"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of suggestion?
+      options:
+        - A mob that isn't covered yet
+        - A new variant of a covered mob
+        - A change to something that already exists
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to see?
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Reference images
+      description: Optional, but a picture makes a proposal far easier to judge.
