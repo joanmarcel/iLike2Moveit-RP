@@ -3,9 +3,9 @@
 All notable changes to this pack are documented here. Versions match the `pack.mcmeta` version shown in
 the in-game resource pack list.
 
-## v1.1 — housekeeping, and the companion mod is out
+## v1.1.0-beta.2 — housekeeping, and the companion mod is out
 
-No new mobs and no animation changes: everything looks and behaves exactly as in v1.0. This release
+No new mobs and no animation changes: everything looks and behaves exactly as in v1.0.0-beta.1. This release
 exists so that what ships matches what the page says.
 
 **Changed**
@@ -26,7 +26,7 @@ exists so that what ships matches what the page says.
 
 - The pig ships with its new model but no animation yet.
 
-## v1.0 — first public release
+## v1.0.0-beta.1 — first public release
 
 **Mobs covered**
 
