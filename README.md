@@ -17,7 +17,7 @@ mobs, using OptiFine CEM through the **EMF + ETF** mods.
 It is built to **extend Fresh Animations, not replace it**. Each mob is hand-rigged and added one at a
 time, and everything not covered yet keeps animating through FA. The roster grows with every release.
 
-Inspired by Fresh Animations and AnS style.
+Inspired by Fresh Animations and by the lively, exaggerated style of Bedrock animation packs.
 
 <!--
 GALLERY — uncomment this block once the files exist in screenshots/.
@@ -107,9 +107,9 @@ versions may work, but the combination above is the only one verified.
 
 **The villager will not animate until EMF's `asmMaths` option is off.** Two ways to get there — pick one:
 
-**Either install the iLike2Moveit companion mod.** It turns the option off for you at load time, in
-memory, and never rewrites your config file. Nothing else to do.
-<!-- TODO: link the companion mod's download page here once it's published. -->
+**Either install the [iLike2MoveIt companion mod](https://github.com/joanmarcel/iLike2Moveit-Mod).** It
+turns the option off for you at load time, in memory, and never rewrites your config file. Nothing else
+to do.
 
 **Or edit the config yourself.** Open `config/entity_model_features.json` and set:
 
@@ -139,10 +139,11 @@ Do not mix EMF 2.x with ETF 7.x — that combination fails with
 
 ### The companion mod
 
-A separate client-side mod does two things. It handles the `asmMaths` setting for you, and it adds
-behaviour the resource pack alone cannot express: the trade item following the villager's hands, wolf
-reunion and cat lie-down signals, and warm/cold/rooster chicken compatibility on Java 1.21.1. It requires
-VanillaBackport 1.1.7.10 and Platform 1.3.3.
+A separate client-side mod, [**iLike2MoveIt — Mod**](https://github.com/joanmarcel/iLike2Moveit-Mod),
+does two things. It handles the `asmMaths` setting for you, and it adds behaviour the resource pack
+alone cannot express: the trade item following the villager's hands, wolf reunion and cat lie-down
+signals, and warm/cold/rooster chicken compatibility on Java 1.21.1. It requires VanillaBackport
+1.1.7.10 and Platform 1.3.3.
 
 The pack works without it, as long as you set `asmMaths` yourself — you just won't get those extras.
 
@@ -190,5 +191,11 @@ That license covers the work created by this project: the CEM rigs, the molang a
 
 ### About this project
 
-iLike2Moveit is an independent, non-commercial fan project, inspired by Fresh Animations and AnS style.
-It is **not affiliated with or endorsed by** any other pack, addon or studio.
+iLike2MoveIt is an independent, non-commercial fan project, inspired by Fresh Animations and by the
+lively, exaggerated style of Bedrock animation packs. It is **not affiliated with or endorsed by** any
+other pack, addon or studio.
+
+## Community
+
+Discord: **https://discord.gg/45YFupj5Q7** — for questions, screenshots and anything that is not a bug
+report.

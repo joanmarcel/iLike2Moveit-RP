@@ -3,3 +3,9 @@ contact_links:
   - name: Installation and requirements
     url: https://github.com/joanmarcel/iLike2Moveit-RP#requirements
     about: EMF/ETF versions, the required asmMaths setting, and load order — read this first.
+  - name: The companion mod
+    url: https://github.com/joanmarcel/iLike2Moveit-Mod
+    about: The other half. Anything about held items, the wolf reunion or warm variants belongs there.
+  - name: Discord
+    url: https://discord.gg/45YFupj5Q7
+    about: Questions, screenshots and anything that is not a bug report.
