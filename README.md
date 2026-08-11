@@ -81,11 +81,19 @@ fallback.
 | **Cat** | Adult and kitten, 11 breed textures |
 | **Chicken** | Hen, chick, rooster, plus warm and cold biome variants |
 | **Fox** | Adult, red kit and arctic kit, with run, sit, sleep and stalk animation |
-| **Pig** | Warm variant — **new geometry, animation still to come** |
+| **Pig** | Adult and piglet, 21 clips, locomotion, turns, airborne/landing, resting, climate breeds, name variants and saddle layers |
+| **Rabbit** | Adult geometry and colour variants, breathing, look tracking, hops, airborne poses, bounce and stepped turns |
+| **Ocelot** | Wild feline gait, swim, idle/look, random gestures, turns and airborne poses |
+| **Wandering Trader** | Dedicated model, swimming, drinking, airborne motion and vehicle-specific passenger poses |
+| **Turtle** | Adult, baby and hatchling; land/swim movement, blink/look and airborne/landing motion |
+| **Frog** | Three variants, articulated limbs, walk/turn/swim, jump/bounce, tongue attack and croaking |
+| **Dolphin** | Adult and calf presentation, swim/idle/look/blink, beached state and tonina variant |
+| **Cow** | Temperate, warm, cold and Birch Forest breeds, dedicated calves, full animation and bull/lidia presentation |
+| **Mooshroom** | Red and brown adults/calves with the cow animation rig and restored mushrooms |
+| **Sheep** | Adult and lamb, tintable wool layers, locomotion, grazing, idles, swim and airborne/landing motion |
 
-**The pig is the current exception.** It ships with its new model but no animation yet, so it will stand
-still instead of using FA's pig animation. Animating it is next on the list. Every other mob either
-appears above with full animation, or isn't touched by this pack at all and keeps its FA behaviour.
+Every mob in the table has an animated runtime model. Mobs not listed remain untouched and continue to
+use Fresh Animations.
 
 ---
 
@@ -139,11 +147,14 @@ Do not mix EMF 2.x with ETF 7.x — that combination fails with
 
 ### The companion mod
 
-A separate client-side mod, [**iLike2MoveIt — Mod**](https://github.com/joanmarcel/iLike2Moveit-Mod),
-does two things. It handles the `asmMaths` setting for you, and it adds behaviour the resource pack
-alone cannot express: the trade item following the villager's hands, wolf reunion and cat lie-down
-signals, and warm/cold/rooster chicken compatibility on Java 1.21.1. It requires VanillaBackport
-1.1.7.10 and Platform 1.3.3.
+A separate NeoForge/Fabric mod, [**iLike2MoveIt — Core**](https://github.com/joanmarcel/iLike2Moveit-Mod),
+handles the `asmMaths` setting and exposes behaviour the resource pack alone cannot express: animated
+held items, wolf reunion and cat resting signals, rabbit jump state, renderer compatibility, collective
+pig resting and persistent pig/cow breeds. It requires VanillaBackport 1.1.7.10 and Platform 1.3.3.
+
+Visual-only helpers work from a client installation. Install the matching Core jar on both client and
+server to enable collective resting and persistent custom breeds; its versioned handshake safely
+disables those states when the server does not have the mod.
 
 The pack works without it, as long as you set `asmMaths` yourself — you just won't get those extras.
 
@@ -157,7 +168,7 @@ installed. Press F3+T to reload and check the log for EMF/ETF startup errors.
 
 **The mob renders in the new style but stands perfectly still.**
 Almost always the `asmMaths` setting. Confirm it's `false`, restart, and check the log for
-`MethodTooLargeException`. If it's the pig, that's expected — see the roster above.
+`MethodTooLargeException`.
 
 **A mob still looks like plain Fresh Animations.**
 It probably isn't covered yet. Check the roster above; if it's not listed, FA is doing its job.
