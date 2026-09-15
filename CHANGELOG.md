@@ -3,6 +3,26 @@
 All notable changes to this pack are documented here. Versions match the `pack.mcmeta` version shown in
 the in-game resource pack list.
 
+## v1.1.2-beta.4 — baby presentations and model consistency
+
+This release adds selectable Tiny Takeover baby presentations and refines model, texture and attachment behavior across the existing sixteen-mob roster. Pair it with Core v0.2.1-beta.2 for the corresponding model selectors and rendering fixes.
+
+**Current pairing:** Core v0.2.1-beta.2 is currently available for NeoForge; its Fabric release is pending.
+
+**Changed**
+
+- Tiny Takeover baby presentations for chicken, wolf, cat, ocelot, pig and rabbit coexist with their Classic options.
+- Cat and ocelot baby models use isolated layers; texture routing and upper body/tail UVs are corrected.
+- Baby rabbits receive a corrected vertical offset. Fox mouth items and iron-golem flowers use animated attachment points.
+- Sheep baby base and tintable wool use complementary masks, with dedicated sheared routing; adult Classic and Alternate presentations remain separate.
+- Existing turn, pose and model refinements are consolidated into one pack.
+
+**Installation and limitations**
+
+- Minecraft 1.21.1 with EMF/ETF and the Fresh Animations stack. Keep iLike2MoveIt above its base packs.
+- Install matching Core and VanillaBackport dependencies for Core-backed selectors and behavior.
+- The roster remains sixteen mobs. Deferred animation tiers, riding poses and extreme transition/world-generation cases remain documented limitations; this release does not claim full coverage of every combination.
+
 ## v1.1.1-beta.3 — nine new mobs and a fully animated pig
 
 The roster grows from seven mobs to sixteen. This release adds nine complete ports, turns the pig

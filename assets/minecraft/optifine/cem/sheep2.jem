@@ -1,0 +1,898 @@
+{
+ "credit": "iLike2MoveIt sheep preserve-mode port. tools/build_sheep.py",
+ "textureSize": [
+  64,
+  64
+ ],
+ "texture": "sheep_baby_base.png",
+ "shadowSize": 0.7,
+ "models": [
+  {
+   "part": "body",
+   "id": "body",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    2,
+    3
+   ],
+   "submodels": [
+    {
+     "id": "alt_sheep",
+     "invertAxis": "xy",
+     "translate": [
+      0,
+      0,
+      -22
+     ],
+     "rotate": [
+      90,
+      0,
+      0
+     ],
+     "submodels": [
+      {
+       "invertAxis": "xy",
+       "translate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "submodels": [
+        {
+         "id": "turn_pivot",
+         "invertAxis": "xy",
+         "translate": [
+          0,
+          0,
+          0
+         ],
+         "rotate": [
+          0,
+          0,
+          0
+         ],
+         "submodels": [
+          {
+           "id": "alt_body",
+           "invertAxis": "xy",
+           "translate": [
+            0.0,
+            14.25,
+            0.0
+           ],
+           "submodels": [
+            {
+             "id": "torso",
+             "invertAxis": "xy",
+             "translate": [
+              0.0,
+              0.0,
+              0.0
+             ],
+             "rotate": [
+              -90.0,
+              0.0,
+              0.0
+             ],
+             "boxes": [
+              {
+               "coordinates": [
+                -5.0,
+                -7.0,
+                -5.0,
+                10.0,
+                16.0,
+                10.0
+               ],
+               "textureOffset": [
+                24.0,
+                4.0
+               ]
+              }
+             ],
+             "submodels": [
+              {
+               "id": "fleece_torso",
+               "invertAxis": "xy",
+               "translate": [
+                0.0,
+                0.0,
+                0.0
+               ]
+              }
+             ]
+            },
+            {
+             "id": "alt_head",
+             "invertAxis": "xy",
+             "translate": [
+              0.0,
+              3.75,
+              -7.0
+             ],
+             "submodels": [
+              {
+               "id": "baby_head",
+               "invertAxis": "xy",
+               "translate": [
+                0.0,
+                0.0,
+                0.0
+               ],
+               "boxes": [
+                {
+                 "coordinates": [
+                  -2.5,
+                  -3.0,
+                  -5.75,
+                  5.0,
+                  5.0,
+                  6.0
+                 ],
+                 "textureOffset": [
+                  2.0,
+                  2.0
+                 ],
+                 "sizeAdd": 0.02
+                },
+                {
+                 "coordinates": [
+                  -2.4,
+                  -2.025,
+                  -5.66,
+                  4.8,
+                  3.05,
+                  1.0
+                 ],
+                 "uvNorth": [
+                  33.0,
+                  1.0,
+                  37.0,
+                  4.0
+                 ],
+                 "uvEast": [
+                  31.0,
+                  1.0,
+                  32.0,
+                  4.0
+                 ],
+                 "uvSouth": [
+                  37.0,
+                  1.0,
+                  41.0,
+                  4.0
+                 ],
+                 "uvWest": [
+                  32.0,
+                  1.0,
+                  33.0,
+                  4.0
+                 ],
+                 "sizeAdd": 0.1
+                }
+               ],
+               "submodels": [
+                {
+                 "id": "ears",
+                 "invertAxis": "xy",
+                 "translate": [
+                  0.0,
+                  -1.0,
+                  0.0
+                 ],
+                 "submodels": [
+                  {
+                   "id": "ear_left",
+                   "invertAxis": "xy",
+                   "translate": [
+                    2.5,
+                    1.0,
+                    -3.25
+                   ],
+                   "rotate": [
+                    0.0,
+                    0.0,
+                    -10.0
+                   ],
+                   "boxes": [
+                    {
+                     "coordinates": [
+                      0.0,
+                      -1.0,
+                      -0.5,
+                      2.0,
+                      2.0,
+                      1.0
+                     ],
+                     "uvNorth": [
+                      45.0,
+                      1.0,
+                      47.0,
+                      3.0
+                     ],
+                     "uvEast": [
+                      44.0,
+                      1.0,
+                      45.0,
+                      3.0
+                     ],
+                     "uvSouth": [
+                      48.0,
+                      1.0,
+                      50.0,
+                      3.0
+                     ],
+                     "uvWest": [
+                      47.0,
+                      1.0,
+                      48.0,
+                      3.0
+                     ],
+                     "uvUp": [
+                      47.0,
+                      1.0,
+                      45.0,
+                      0.0
+                     ],
+                     "uvDown": [
+                      49.0,
+                      0.0,
+                      47.0,
+                      1.0
+                     ]
+                    }
+                   ]
+                  },
+                  {
+                   "id": "ear_right",
+                   "invertAxis": "xy",
+                   "translate": [
+                    -2.5,
+                    1.0,
+                    -3.25
+                   ],
+                   "rotate": [
+                    0.0,
+                    0.0,
+                    10.0
+                   ],
+                   "boxes": [
+                    {
+                     "coordinates": [
+                      -2.0,
+                      -1.0,
+                      -0.5,
+                      2.0,
+                      2.0,
+                      1.0
+                     ],
+                     "uvNorth": [
+                      47.0,
+                      1.0,
+                      45.0,
+                      3.0
+                     ],
+                     "uvEast": [
+                      48.0,
+                      1.0,
+                      47.0,
+                      3.0
+                     ],
+                     "uvSouth": [
+                      50.0,
+                      1.0,
+                      48.0,
+                      3.0
+                     ],
+                     "uvWest": [
+                      45.0,
+                      1.0,
+                      44.0,
+                      3.0
+                     ],
+                     "uvUp": [
+                      45.0,
+                      1.0,
+                      47.0,
+                      0.0
+                     ],
+                     "uvDown": [
+                      47.0,
+                      0.0,
+                      49.0,
+                      1.0
+                     ]
+                    }
+                   ]
+                  }
+                 ]
+                },
+                {
+                 "id": "blink",
+                 "invertAxis": "xy",
+                 "translate": [
+                  0.0,
+                  -1.0,
+                  -5.75
+                 ],
+                 "boxes": [
+                  {
+                   "coordinates": [
+                    1.5,
+                    -0.02,
+                    0.0,
+                    1.0,
+                    1.05,
+                    1.0
+                   ],
+                   "textureOffset": [
+                    27.0,
+                    2.0
+                   ],
+                   "sizeAdd": 0.015,
+                   "mirrorTexture": true
+                  },
+                  {
+                   "coordinates": [
+                    -2.5,
+                    -0.025,
+                    0.0,
+                    1.0,
+                    1.05,
+                    1.0
+                   ],
+                   "textureOffset": [
+                    27.0,
+                    2.0
+                   ],
+                   "sizeAdd": 0.015
+                  }
+                 ]
+                },
+                {
+                 "id": "fleece_head",
+                 "invertAxis": "xy",
+                 "translate": [
+                  0.0,
+                  0.0,
+                  0.0
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "id": "lead_anchor",
+             "invertAxis": "xy",
+             "translate": [
+              0,
+              3.75,
+              -8
+             ]
+            }
+           ]
+          },
+          {
+           "id": "back_left_leg_root",
+           "invertAxis": "xy",
+           "translate": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "submodels": [
+            {
+             "id": "back_left_hip",
+             "invertAxis": "xy",
+             "translate": [
+              2.75,
+              0.0,
+              5.5
+             ],
+             "submodels": [
+              {
+               "id": "back_left_leg",
+               "invertAxis": "xy",
+               "translate": [
+                0.0,
+                11.5,
+                0.0
+               ],
+               "boxes": [
+                {
+                 "coordinates": [
+                  -3.95,
+                  -11.7,
+                  -2.99,
+                  6.0,
+                  12.0,
+                  6.0
+                 ],
+                 "textureOffset": [
+                  0.0,
+                  14.0
+                 ],
+                 "sizeAdd": -0.2
+                }
+               ],
+               "submodels": [
+                {
+                 "id": "fleece_back_left_leg",
+                 "invertAxis": "xy",
+                 "translate": [
+                  0.0,
+                  0.0,
+                  0.0
+                 ],
+                 "boxes": [
+                  {
+                   "coordinates": [
+                    -3.95,
+                    -5.86,
+                    -2.99,
+                    6.0,
+                    6.0,
+                    6.0
+                   ],
+                   "textureOffset": [
+                    0.0,
+                    46.0
+                   ],
+                   "sizeAdd": 0.35
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "id": "back_right_leg_root",
+           "invertAxis": "xy",
+           "translate": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "submodels": [
+            {
+             "id": "back_right_hip",
+             "invertAxis": "xy",
+             "translate": [
+              -2.75,
+              0.0,
+              5.5
+             ],
+             "submodels": [
+              {
+               "id": "back_right_leg",
+               "invertAxis": "xy",
+               "translate": [
+                0.0,
+                11.5,
+                0.0
+               ],
+               "boxes": [
+                {
+                 "coordinates": [
+                  -2.05,
+                  -11.7,
+                  -2.99,
+                  6.0,
+                  12.0,
+                  6.0
+                 ],
+                 "textureOffset": [
+                  0.0,
+                  14.0
+                 ],
+                 "sizeAdd": -0.2,
+                 "mirrorTexture": true
+                }
+               ],
+               "submodels": [
+                {
+                 "id": "fleece_back_right_leg",
+                 "invertAxis": "xy",
+                 "translate": [
+                  0.0,
+                  0.0,
+                  0.0
+                 ],
+                 "boxes": [
+                  {
+                   "coordinates": [
+                    -2.05,
+                    -5.86,
+                    -2.99,
+                    6.0,
+                    6.0,
+                    6.0
+                   ],
+                   "textureOffset": [
+                    0.0,
+                    46.0
+                   ],
+                   "sizeAdd": 0.35,
+                   "mirrorTexture": true
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "id": "front_left_leg_root",
+           "invertAxis": "xy",
+           "translate": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "submodels": [
+            {
+             "id": "front_left_hip",
+             "invertAxis": "xy",
+             "translate": [
+              2.75,
+              0.0,
+              -5.5
+             ],
+             "submodels": [
+              {
+               "id": "front_left_leg",
+               "invertAxis": "xy",
+               "translate": [
+                0.0,
+                11.5,
+                0.0
+               ],
+               "boxes": [
+                {
+                 "coordinates": [
+                  -3.95,
+                  -11.7,
+                  -3.02,
+                  6.0,
+                  12.0,
+                  6.0
+                 ],
+                 "textureOffset": [
+                  0.0,
+                  14.0
+                 ],
+                 "sizeAdd": -0.2
+                }
+               ],
+               "submodels": [
+                {
+                 "id": "fleece_front_left_leg",
+                 "invertAxis": "xy",
+                 "translate": [
+                  0.0,
+                  0.0,
+                  0.0
+                 ],
+                 "boxes": [
+                  {
+                   "coordinates": [
+                    -3.95,
+                    -5.86,
+                    -3.02,
+                    6.0,
+                    6.0,
+                    6.0
+                   ],
+                   "textureOffset": [
+                    0.0,
+                    46.0
+                   ],
+                   "sizeAdd": 0.35
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "id": "front_right_leg_root",
+           "invertAxis": "xy",
+           "translate": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "submodels": [
+            {
+             "id": "front_right_hip",
+             "invertAxis": "xy",
+             "translate": [
+              -2.75,
+              0.0,
+              -5.5
+             ],
+             "submodels": [
+              {
+               "id": "front_right_leg",
+               "invertAxis": "xy",
+               "translate": [
+                0.0,
+                11.5,
+                0.0
+               ],
+               "boxes": [
+                {
+                 "coordinates": [
+                  -2.05,
+                  -11.7,
+                  -3.02,
+                  6.0,
+                  12.0,
+                  6.0
+                 ],
+                 "textureOffset": [
+                  0.0,
+                  14.0
+                 ],
+                 "sizeAdd": -0.2,
+                 "mirrorTexture": true
+                }
+               ],
+               "submodels": [
+                {
+                 "id": "fleece_front_right_leg",
+                 "invertAxis": "xy",
+                 "translate": [
+                  0.0,
+                  0.0,
+                  0.0
+                 ],
+                 "boxes": [
+                  {
+                   "coordinates": [
+                    -2.05,
+                    -5.86,
+                    -3.02,
+                    6.0,
+                    6.0,
+                    6.0
+                   ],
+                   "textureOffset": [
+                    0.0,
+                    46.0
+                   ],
+                   "sizeAdd": 0.35,
+                   "mirrorTexture": true
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ],
+       "id": "sheep_root"
+      }
+     ]
+    }
+   ],
+   "animations": [
+    {
+     "varb.sheep_same_frame": "frame_counter==var.sheep_frame_prev",
+     "var.sheep_move": "if(is_on_ground&&!is_in_water&&!is_riding&&!is_ridden&&limb_speed>0.01,1,0)",
+     "var.sheep_move_warm": "if(varb.sheep_same_frame,var.sheep_move_warm,clamp(var.sheep_move_warm+if(var.sheep_move>0.5,8.333333,-8.333333)*frame_time,0,1))",
+     "var.sheep_move_blend": "var.sheep_move_warm*var.sheep_move_warm*(3-2*var.sheep_move_warm)",
+     "var.sheep_move_gate": "clamp(limb_speed*3,0,1)*var.sheep_move_blend*(1-var.sheep_air_pose_blend)*(1-var.sheep_swim_blend)",
+     "var.sheep_gait_phase": "frac(limb_swing*0.106029*1)",
+     "var.sheep_run_request": "if(var.sheep_move>0.5&&limb_speed>0.6,1,0)",
+     "var.sheep_run_exit_request": "if(var.sheep_run_fast>0.5&&limb_speed<0.3,1,0)",
+     "var.sheep_run_start": "if(varb.sheep_same_frame,0,if(var.sheep_run_request>0.5&&var.sheep_run_fast<0.5,1,0))",
+     "var.sheep_run_cycle_end": "if(varb.sheep_same_frame,0,if(var.sheep_run_fast>0.5&&var.sheep_run_t>=0.4444,1,0))",
+     "var.sheep_run_finish": "if(varb.sheep_same_frame,0,if(var.sheep_run_exit_pending>0.5&&var.sheep_run_cycle_end>0.5,1,0))",
+     "var.sheep_run_exit_pending": "if(varb.sheep_same_frame,var.sheep_run_exit_pending,if(var.sheep_move<0.5||var.sheep_run_start>0.5||var.sheep_run_cycle_end>0.5,0,if(var.sheep_run_exit_request>0.5,1,var.sheep_run_exit_pending)))",
+     "var.sheep_run_fast": "if(varb.sheep_same_frame,var.sheep_run_fast,if(var.sheep_move<0.5,0,if(var.sheep_run_request>0.5,1,if(var.sheep_run_finish>0.5,0,var.sheep_run_fast))))",
+     "var.sheep_run_t": "if(varb.sheep_same_frame,var.sheep_run_t,if(var.sheep_run_fast<0.5,0,if(var.sheep_run_start>0.5||var.sheep_run_cycle_end>0.5,0,min(var.sheep_run_t+frame_time,0.4444))))",
+     "var.sheep_run_warm": "if(varb.sheep_same_frame,var.sheep_run_warm,clamp(var.sheep_run_warm+if(var.sheep_run_fast>0.5,8.333333,-5.555556)*frame_time,0,1))",
+     "var.sheep_run_blend": "var.sheep_run_warm*var.sheep_run_warm*(3-2*var.sheep_run_warm)",
+     "var.sheep_graze_allowed": "if(!is_riding,1,0)",
+     "var.sheep_graze_raw": "if(var.sheep_graze_allowed>0.5&&abs(head.ty)>6.05,1,0)",
+     "var.sheep_graze_start": "if(varb.sheep_same_frame,0,if(var.sheep_graze_raw>0.5&&var.sheep_graze_prev<0.5,1,0))",
+     "var.sheep_graze_active": "if(varb.sheep_same_frame,var.sheep_graze_active,if(var.sheep_graze_allowed<0.5,0,if(var.sheep_graze_start>0.5,1,if(var.sheep_graze_active>0.5&&var.sheep_graze_t<2.35,1,0))))",
+     "var.sheep_graze_t": "if(varb.sheep_same_frame,var.sheep_graze_t,if(var.sheep_graze_start>0.5,0,if(var.sheep_graze_active>0.5,min(var.sheep_graze_t+frame_time,2.35),var.sheep_graze_t)))",
+     "var.sheep_graze_raw_yaw": "todeg(rot_y)",
+     "var.sheep_graze_anchor_yaw": "if(varb.sheep_same_frame,var.sheep_graze_anchor_yaw,if(var.sheep_graze_yaw_sampled<0.5,var.sheep_graze_raw_yaw,if(var.sheep_graze_active<0.5,var.sheep_graze_raw_yaw,var.sheep_graze_anchor_yaw)))",
+     "var.sheep_graze_yaw_offset": "wrapdeg(var.sheep_graze_anchor_yaw-var.sheep_graze_raw_yaw)*var.sheep_graze_active",
+     "var.sheep_graze_yaw_sampled": "if(varb.sheep_same_frame,var.sheep_graze_yaw_sampled,1)",
+     "var.sheep_graze_prev": "if(varb.sheep_same_frame,var.sheep_graze_prev,var.sheep_graze_raw)",
+     "var.sheep_air_vy": "if(varb.sheep_same_frame,var.sheep_air_vy,if(var.sheep_env_sampled<0.5,0,(pos_y-var.sheep_air_prev_y)*0.5+var.sheep_air_vy*0.5))",
+     "var.sheep_air_prev_y": "if(varb.sheep_same_frame,var.sheep_air_prev_y,pos_y)",
+     "var.sheep_airborne": "if(!is_on_ground&&!is_in_water&&!is_riding&&!is_ridden,1,0)",
+     "var.sheep_step_edge": "if(var.sheep_env_sampled>0.5&&pos_y-var.sheep_env_anchor_y>=0.02&&var.sheep_step_seen<0.5&&var.sheep_step_active<0.5&&var.sheep_jump_warm<0.001&&!is_in_water&&!is_riding&&!is_ridden,1,0)",
+     "var.sheep_step_seen": "if(varb.sheep_same_frame,var.sheep_step_seen,if(var.sheep_step_edge>0.5,1,if(pos_y-var.sheep_env_anchor_y<0.02,0,var.sheep_step_seen)))",
+     "var.sheep_step_active": "if(varb.sheep_same_frame,var.sheep_step_active,if(var.sheep_step_edge>0.5,1,if(var.sheep_step_active>0.5&&var.sheep_step_t<0.174,1,0)))",
+     "var.sheep_step_t": "if(varb.sheep_same_frame,var.sheep_step_t,if(var.sheep_step_edge>0.5,0,if(var.sheep_step_active>0.5,min(var.sheep_step_t+frame_time,0.224),0)))",
+     "var.sheep_jump": "if(varb.sheep_same_frame,var.sheep_jump,if((var.sheep_airborne>0.5&&var.sheep_air_vy>0.1)||var.sheep_step_edge>0.5,1,if(is_in_water||is_riding||is_ridden||(is_on_ground&&var.sheep_step_active<0.5)||(var.sheep_air_vy<-0.0075&&var.sheep_jump_t>0.174),0,var.sheep_jump)))",
+     "var.sheep_fall": "if(varb.sheep_same_frame,var.sheep_fall,if(var.sheep_airborne>0.5&&var.sheep_air_vy<-0.025,1,if(is_in_water||is_riding||is_ridden||var.sheep_air_vy>=-0.0075||(is_on_ground&&var.sheep_air_vy>-0.1&&var.sheep_land_rearmed>0.5),0,var.sheep_fall)))",
+     "var.sheep_jump_warm": "if(varb.sheep_same_frame,var.sheep_jump_warm,clamp(var.sheep_jump_warm+if(var.sheep_jump>0.5,3.333333,-3.333333)*frame_time,0,1))",
+     "var.sheep_fall_warm": "if(varb.sheep_same_frame,var.sheep_fall_warm,clamp(var.sheep_fall_warm+if(var.sheep_fall>0.5,4.545455,-4.545455)*frame_time,0,1))",
+     "var.sheep_jump_blend": "var.sheep_jump_warm*var.sheep_jump_warm*(3-2*var.sheep_jump_warm)",
+     "var.sheep_fall_blend": "var.sheep_fall_warm*var.sheep_fall_warm*(3-2*var.sheep_fall_warm)",
+     "var.sheep_air_pose_blend": "max(var.sheep_jump_blend,var.sheep_fall_blend)",
+     "var.sheep_jump_t": "if(varb.sheep_same_frame,var.sheep_jump_t,if(var.sheep_jump>0.5,min(var.sheep_jump_t+frame_time,0.7667),if(var.sheep_jump_warm<0.001,0,var.sheep_jump_t)))",
+     "var.sheep_fall_t": "if(varb.sheep_same_frame,var.sheep_fall_t,if(var.sheep_fall>0.5,min(var.sheep_fall_t+frame_time,1),if(var.sheep_fall_warm<0.001,0,var.sheep_fall_t)))",
+     "var.sheep_env_anchor_y": "if(varb.sheep_same_frame,var.sheep_env_anchor_y,if(var.sheep_env_sampled<0.5,pos_y,if(is_on_ground&&var.sheep_step_active<0.5&&var.sheep_jump_warm<0.001,pos_y,var.sheep_env_anchor_y)))",
+     "var.sheep_env_sampled": "1",
+     "var.sheep_bounce_allowed": "if(!is_in_water&&!is_riding&&!is_ridden,1,0)",
+     "var.sheep_bounce_anchor_y": "if(varb.sheep_same_frame,var.sheep_bounce_anchor_y,if(var.sheep_bounce_sampled<0.5,pos_y,if(var.sheep_bounce_confirm>0.5,pos_y,if(var.sheep_bounce_armed<0.5&&is_on_ground&&pos_y>=var.sheep_bounce_anchor_y-0.02,pos_y,var.sheep_bounce_anchor_y))))",
+     "var.sheep_bounce_drop_now": "max(0,var.sheep_bounce_anchor_y-pos_y)",
+     "var.sheep_bounce_descent": "if(var.sheep_bounce_allowed>0.5&&var.sheep_bounce_drop_now>0.02,1,0)",
+     "var.sheep_bounce_armed": "if(varb.sheep_same_frame,var.sheep_bounce_armed,if(var.sheep_bounce_allowed<0.5,0,if(var.sheep_bounce_confirm>0.5,0,if(!is_on_ground||var.sheep_bounce_descent>0.5,1,var.sheep_bounce_armed))))",
+     "var.sheep_bounce_drop": "if(varb.sheep_same_frame,var.sheep_bounce_drop,if(var.sheep_bounce_armed>0.5,max(var.sheep_bounce_drop,var.sheep_bounce_drop_now),0))",
+     "var.sheep_land_ground_t": "if(varb.sheep_same_frame,var.sheep_land_ground_t,if(var.sheep_bounce_armed>0.5&&is_on_ground,min(var.sheep_land_ground_t+frame_time,0.14),0))",
+     "var.sheep_bounce_confirm": "if(var.sheep_bounce_armed>0.5&&is_on_ground&&var.sheep_land_ground_t>=0.14,1,0)",
+     "var.sheep_bounce_start": "if(varb.sheep_same_frame,0,if(var.sheep_bounce_confirm>0.5&&var.sheep_bounce_drop>=0.75&&var.sheep_bounce_active<0.5,1,0))",
+     "var.sheep_bounce_active": "if(varb.sheep_same_frame,var.sheep_bounce_active,if(var.sheep_bounce_allowed<0.5,0,if(var.sheep_bounce_start>0.5,1,if(var.sheep_bounce_active>0.5&&var.sheep_bounce_t<0.6667,1,0))))",
+     "var.sheep_bounce_t": "if(varb.sheep_same_frame,var.sheep_bounce_t,if(var.sheep_bounce_start>0.5,0,if(var.sheep_bounce_active>0.5,min(var.sheep_bounce_t+frame_time,0.6667),0)))",
+     "var.sheep_bounce_gate": "(var.sheep_bounce_active*clamp(var.sheep_bounce_t/0.1,0,1))*(1-var.sheep_swim_blend)",
+     "var.sheep_land_rearmed": "if(var.sheep_bounce_armed>0.5,if(var.sheep_bounce_confirm>0.5,1,0),if(is_on_ground,1,0))",
+     "var.sheep_bounce_sampled": "1",
+     "var.sheep_swim_start": "if(varb.sheep_same_frame,0,if(is_in_water&&var.sheep_swim_active<0.5,1,0))",
+     "var.sheep_swim_active": "if(varb.sheep_same_frame,var.sheep_swim_active,if(is_in_water,1,if(is_on_ground,0,var.sheep_swim_active)))",
+     "var.sheep_swim_t": "if(varb.sheep_same_frame,var.sheep_swim_t,if(var.sheep_swim_start>0.5,0,if(var.sheep_swim_active>0.5||var.sheep_swim_warm>0.001,var.sheep_swim_t+frame_time,0)))",
+     "var.sheep_swim_warm": "if(varb.sheep_same_frame,var.sheep_swim_warm,clamp(var.sheep_swim_warm+if(var.sheep_swim_active>0.5,4.166667,-4.166667)*frame_time,0,1))",
+     "var.sheep_swim_blend": "var.sheep_swim_warm*var.sheep_swim_warm*(3-2*var.sheep_swim_warm)",
+     "var.sheep_turn_raw_yaw": "todeg(rot_y)",
+     "var.sheep_turn_physical_delta": "if(var.sheep_turn_sampled>0.5,wrapdeg(var.sheep_turn_raw_yaw-var.sheep_turn_prev_raw_yaw),0)",
+     "var.sheep_turn_pose_allowed": "if(is_on_ground&&!is_in_water&&!is_riding&&!is_ridden&&var.sheep_jump<0.5&&var.sheep_fall<0.5&&var.sheep_step_active<0.5&&var.sheep_graze_active<0.5,1,0)",
+     "var.sheep_turn_locomotion": "if(var.sheep_turn_locomotion>0.5,if(limb_speed>0.08,1,0),if(limb_speed>=0.1,1,0))",
+     "var.sheep_turn_signal": "if(var.sheep_turn_pose_allowed>0.5&&var.sheep_turn_locomotion<0.5&&abs(var.sheep_turn_physical_delta)>=0.000573,1,0)",
+     "var.sheep_turn_interrupt_request": "var.sheep_turn_signal",
+     "var.sheep_turn_cycle_end": "if(var.sheep_turn_playing>0.5&&var.sheep_turn_t>=0.75,1,0)",
+     "var.sheep_turn_start": "if(var.sheep_turn_signal>0.5&&var.sheep_turn_playing<0.5,1,0)",
+     "var.sheep_turn_amount": "if(varb.sheep_same_frame,var.sheep_turn_amount,if(var.sheep_turn_start>0.5||var.sheep_turn_cycle_end>0.5&&var.sheep_turn_signal>0.5,if(var.sheep_turn_physical_delta>0,30,-30),var.sheep_turn_amount))",
+     "var.sheep_turn_playing": "if(varb.sheep_same_frame,var.sheep_turn_playing,if(var.sheep_turn_pose_allowed<0.5||var.sheep_turn_locomotion>0.5,0,if(var.sheep_turn_start>0.5,1,if(var.sheep_turn_playing>0.5&&var.sheep_turn_cycle_end<0.5,1,if(var.sheep_turn_cycle_end>0.5&&var.sheep_turn_signal>0.5,1,0)))))",
+     "var.sheep_turn_t": "if(varb.sheep_same_frame,var.sheep_turn_t,if(var.sheep_turn_start>0.5,0,if(var.sheep_turn_cycle_end>0.5&&var.sheep_turn_signal>0.5,0,if(var.sheep_turn_playing>0.5,min(var.sheep_turn_t+frame_time,0.75),if(var.sheep_turn_warm>0.001,var.sheep_turn_t,0)))))",
+     "var.sheep_turn_warm": "if(varb.sheep_same_frame,var.sheep_turn_warm,clamp(var.sheep_turn_warm+if(var.sheep_turn_playing>0.5,6.666667,-6.666667)*frame_time,0,1))",
+     "var.sheep_turn_blend": "var.sheep_turn_warm*var.sheep_turn_warm*(3-2*var.sheep_turn_warm)",
+     "var.sheep_turn_phase": "clamp(var.sheep_turn_t/0.75,0,1)",
+     "var.sheep_turn_prev_raw_yaw": "if(varb.sheep_same_frame,var.sheep_turn_prev_raw_yaw,var.sheep_turn_raw_yaw)",
+     "var.sheep_turn_sampled": "if(varb.sheep_same_frame,var.sheep_turn_sampled,1)",
+     "var.sheep_random_allowed": "if(!is_riding&&var.sheep_graze_active<0.5&&var.sheep_turn_playing<0.5&&var.sheep_turn_blend<0.001,1,0)",
+     "var.sheep_random_to_wait": "if(var.sheep_random_allowed>0.5&&var.sheep_random_state<0.5&&var.sheep_random_t>0.3,1,0)",
+     "var.sheep_random_to_play": "if(var.sheep_random_allowed>0.5&&var.sheep_random_state>0.5&&var.sheep_random_state<1.5&&var.sheep_random_t>var.sheep_random_delay,1,0)",
+     "var.sheep_random_wait_reset": "if(var.sheep_random_to_play<0.5&&var.sheep_random_state>0.5&&var.sheep_random_state<1.5&&limb_speed>0,1,0)",
+     "var.sheep_random_play_exit": "if(var.sheep_random_state>1.5&&(var.sheep_random_t>=var.sheep_random_len||limb_speed>0||var.sheep_random_allowed<0.5),1,0)",
+     "var.sheep_random_disable_reset": "if(var.sheep_random_allowed<0.5&&var.sheep_random_state>0.5&&var.sheep_random_play_exit<0.5,1,0)",
+     "var.sheep_random_transition": "if(var.sheep_random_to_wait>0.5||var.sheep_random_to_play>0.5||var.sheep_random_wait_reset>0.5||var.sheep_random_play_exit>0.5||var.sheep_random_disable_reset>0.5,1,0)",
+     "var.sheep_random_wait_seq": "if(varb.sheep_same_frame,var.sheep_random_wait_seq,var.sheep_random_wait_seq+var.sheep_random_to_wait)",
+     "var.sheep_random_delay": "if(var.sheep_random_to_wait>0.5,random(id*3253+var.sheep_random_wait_seq*7919+104729)*6.33,var.sheep_random_delay)",
+     "var.sheep_random_play_seq": "if(varb.sheep_same_frame,var.sheep_random_play_seq,var.sheep_random_play_seq+var.sheep_random_to_play)",
+     "var.sheep_random_sel": "if(var.sheep_random_to_play>0.5,floor(random(id*5171+var.sheep_random_play_seq*9973)*1.9999),var.sheep_random_sel)",
+     "var.sheep_random_len": "if(var.sheep_random_sel<0.5,1.5,2.5)",
+     "var.sheep_random_exit_sel": "if(var.sheep_random_play_exit>0.5,var.sheep_random_sel,var.sheep_random_exit_sel)",
+     "var.sheep_random_exit_frame": "if(var.sheep_random_play_exit>0.5,clamp(var.sheep_random_t*24,0,var.sheep_random_len*24),var.sheep_random_exit_frame)",
+     "var.sheep_random_exit_done": "if(var.sheep_random_exit_valid>0.5&&var.sheep_random_exit_t>=0.3,1,0)",
+     "var.sheep_random_exit_valid": "if(var.sheep_random_play_exit>0.5,1,if(var.sheep_random_exit_done>0.5,0,var.sheep_random_exit_valid))",
+     "var.sheep_random_exit_t": "if(varb.sheep_same_frame,var.sheep_random_exit_t,if(var.sheep_random_play_exit>0.5,0,if(var.sheep_random_exit_valid>0.5,min(var.sheep_random_exit_t+frame_time,0.3),var.sheep_random_exit_t)))",
+     "var.sheep_random_state": "if(varb.sheep_same_frame,var.sheep_random_state,if(var.sheep_random_play_exit>0.5||var.sheep_random_wait_reset>0.5||var.sheep_random_disable_reset>0.5,0,if(var.sheep_random_to_play>0.5,2,if(var.sheep_random_to_wait>0.5,1,var.sheep_random_state))))",
+     "var.sheep_random_t": "if(varb.sheep_same_frame,var.sheep_random_t,if(var.sheep_random_transition>0.5,0,if(var.sheep_random_allowed>0.5,var.sheep_random_t+frame_time,0)))",
+     "var.sheep_random_play_gate": "if(var.sheep_random_state>1.5,clamp(var.sheep_random_t/0.3,0,1),0)",
+     "var.sheep_random_exit_gate": "if(var.sheep_random_exit_valid>0.5,clamp(1-var.sheep_random_exit_t/0.3,0,1),0)",
+     "var.sheep_random_gate": "clamp(var.sheep_random_play_gate+var.sheep_random_exit_gate,0,1)",
+     "back_left_leg.tz": "(((0)+((((0)+(1*(((keyframe(var.sheep_gait_phase*18,0.115,0.436743,0.764619,1.0925,1.37977,1.494816,1.265,0.885803,0.517206,0.1495,-0.229697,-0.598303,-0.9775,-1.149862,-1.092316,-0.8625,-0.540757,-0.212881,0.115))*0.85*(1-var.sheep_run_blend)+(keyframe(var.sheep_gait_phase*12,0,0,0,0,0,0,0,0.09982,0.212399,0.385,0.424928,0.215189,0))*0.8*var.sheep_run_blend))*var.sheep_move_gate))+(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0.085,0.17,0.36,0.55,0.835,1.12,1.21,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.205,1.11,1.01,0.91,0.925,0.94,0.955,0.97,0.985,1,0.915,0.83,0.5,0.17,0.085,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active))-(0))*(1-var.sheep_air_pose_blend)+(1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_jump_blend+(1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(0+(1*(1.4+sin(torad(var.sheep_swim_t*600))*1.4)))*var.sheep_swim_blend)",
+     "back_left_leg.rx": "(((((0)+(torad(1*(((keyframe(var.sheep_gait_phase*18,-4.531,11.097701,26.726401,42.355102,57.983802,73.603677,78.2,72.684412,57.311443,22.86511,-11.581224,-46.018385,-69,-74.745404,-67.0325,-51.407125,-35.78175,-20.156375,-4.531))*0.85*(1-var.sheep_run_blend)+(keyframe(var.sheep_gait_phase*12,9.98,-11.475344,-32.930688,-37.4,-41.840701,-31.509299,-11.50135,8.515317,28.531983,34.941363,41.338484,31.458919,9.98))*0.8*var.sheep_run_blend)))*var.sheep_move_gate))+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0.5,1,2.115,3.23,5.025,6.82,8.01,9.2,9.6,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,9.3,8.6,7.15,5.7,2.75,-0.2,-2.05,-3.9,-4.45,-5,-4.585,-4.17,-2.5,-0.83,-0.415,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))+(torad(1*(if(var.sheep_turn_amount>0,(keyframe(var.sheep_turn_phase*24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)),(keyframe(var.sheep_turn_phase*24,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,7.5,6,4.5,3,1.5,0,0,0)))*var.sheep_turn_blend))))*(1-var.sheep_swim_blend)+(torad(0+(sin(torad(var.sheep_swim_t*600))*30)))*var.sheep_swim_blend)",
+     "back_right_leg.tz": "(((0)+((((0)+(1*(((keyframe(var.sheep_gait_phase*18,0.1495,-0.229697,-0.598303,-0.9775,-1.149862,-1.092316,-0.8625,-0.540757,-0.212881,0.115,0.436743,0.764619,1.0925,1.37977,1.494816,1.265,0.885803,0.517206,0.1495))*0.85*(1-var.sheep_run_blend)+(keyframe(var.sheep_gait_phase*12,0,0,0,0,0,0,0,0,0,0,0,0,0))*0.8*var.sheep_run_blend))*var.sheep_move_gate))+(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0.085,0.17,0.36,0.55,0.835,1.12,1.21,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.3,1.205,1.11,1.01,0.91,0.925,0.94,0.955,0.97,0.985,1,0.9575,0.915,0.8725,0.83,0.665,0.5,0.335,0.17,0.1275,0.085,0.0425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active))-(0))*(1-var.sheep_air_pose_blend)+(1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_jump_blend+(1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(0+(1*(1.4+sin(torad(var.sheep_swim_t*600))*-1.4)))*var.sheep_swim_blend)",
+     "back_right_leg.rx": "(((((0)+(torad(1*(((keyframe(var.sheep_gait_phase*18,22.87,-11.57878,-46.018385,-69,-74.745404,-67.032498,-51.405276,-35.778054,-20.150832,-4.523609,11.103613,26.730835,42.358057,57.98528,73.603677,78.2,72.684412,57.311447,22.87))*0.85*(1-var.sheep_run_blend)+(keyframe(var.sheep_gait_phase*12,-32.95,-37.397998,-41.845996,-31.5,-11.483333,8.533333,28.55,34.947121,41.344242,31.45,9.983333,-11.483333,-32.95))*0.8*var.sheep_run_blend)))*var.sheep_move_gate))+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0.5,1,2.115,3.23,5.025,6.82,8.01,9.2,9.6,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,9.3,8.6,7.15,5.7,2.75,-0.2,-2.05,-3.9,-4.45,-5,-4.7925,-4.585,-4.3775,-4.17,-3.335,-2.5,-1.665,-0.83,-0.6225,-0.415,-0.2075,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))+(torad(1*(if(var.sheep_turn_amount>0,(keyframe(var.sheep_turn_phase*24,9,9,9,9,9,9,9,7.5,6,4.5,3,1.5,0,0,0,0,0,0,0,0,0,0,0,0,0)),(keyframe(var.sheep_turn_phase*24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_turn_blend))))*(1-var.sheep_swim_blend)+(torad(0+(sin(torad(var.sheep_swim_t*600))*-30)))*var.sheep_swim_blend)",
+     "front_left_leg.tz": "(((0)+((((0)+(1*(((keyframe(var.sheep_gait_phase*18,-1.0925,-0.862684,-0.540238,-0.21275,0.114738,0.437262,0.76475,1.092238,1.380092,1.495,1.265184,0.885206,0.5175,0.149794,-0.230294,-0.598,-0.977197,-1.149954,-1.0925))*0.85*(1-var.sheep_run_blend)+(keyframe(var.sheep_gait_phase*12,0,0,0,0,0,0,0,0,0,0,0,0,0))*0.8*var.sheep_run_blend))*var.sheep_move_gate))+(1*(keyframe(var.sheep_graze_t*40,0,0,0,-0.225,-0.45,-1.025,-1.6,-2.175,-2.75,-2.875,-3,-2.6,-2.2,-1.45,-0.7,-0.525,-0.35,-0.175,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active))-(0))*(1-var.sheep_air_pose_blend)+(1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_jump_blend+(1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(0+(1*(-1+cos(torad(var.sheep_swim_t*600))*-1.4)))*var.sheep_swim_blend)",
+     "front_left_leg.rx": "((((0)+((((0)+(torad(1*(((keyframe(var.sheep_gait_phase*18,-67.045,-51.417778,-35.790556,-20.163333,-4.536111,11.091111,26.718333,42.345556,57.972778,73.6,78.196323,72.667737,57.339,22.892667,-11.553667,-46,-68.981615,-74.743841,-67.045))*0.85*(1-var.sheep_run_blend)+(keyframe(var.sheep_gait_phase*12,28.55,34.947121,41.344242,31.45,9.983333,-11.483333,-32.95,-37.397998,-41.845996,-31.5,-11.483333,8.533333,28.55))*0.8*var.sheep_run_blend)))*var.sheep_move_gate))+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,5,10,15,20,12.8375,5.675,-1.4875,-8.65,-15.8125,-22.975,-30.1375,-37.3,-36.725,-36.15,-35.575,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35.3125,-35.625,-35.9375,-36.25,-36.5625,-36.875,-37.1875,-37.5,-35.15625,-32.8125,-30.46875,-28.125,-25.78125,-23.4375,-21.09375,-18.75,-16.40625,-14.0625,-11.71875,-9.375,-7.03125,-4.6875,-2.34375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))-(0))*(1-var.sheep_air_pose_blend)+(torad(1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_jump_blend+(torad(1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,-0.333333,-0.9,-1.9175,-3.196667,-4.35,-5,-5.166667,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2))))*var.sheep_fall_blend)+(torad(1*(if(var.sheep_turn_amount>0,(keyframe(var.sheep_turn_phase*24,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-7.5,-6,-4.5,-3,-1.5,0,0,0,0,0,0,0,0,0)),(keyframe(var.sheep_turn_phase*24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_turn_blend))))*(1-var.sheep_swim_blend)+(torad(0+(-20+cos(torad(var.sheep_swim_t*600))*-30)))*var.sheep_swim_blend)",
+     "front_right_leg.tz": "(((0)+((((0)+(1*(((keyframe(var.sheep_gait_phase*18,1.495,1.265184,0.885206,0.5175,0.149794,-0.230294,-0.598,-0.977197,-1.149954,-1.0925,-0.862684,-0.540238,-0.21275,0.114738,0.437262,0.76475,1.092238,1.380092,1.495))*0.85*(1-var.sheep_run_blend)+(keyframe(var.sheep_gait_phase*12,0,0,0,0,0,0,0,0,0,0,0,0,0))*0.8*var.sheep_run_blend))*var.sheep_move_gate))+(1*(keyframe(var.sheep_graze_t*40,0,-0.225,-0.45,-1.025,-1.6,-2.175,-2.75,-2.875,-3,-2.6,-2.2,-1.45,-0.7,-0.525,-0.35,-0.175,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active))-(0))*(1-var.sheep_air_pose_blend)+(1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_jump_blend+(1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(0+(1*(-1+cos(torad(var.sheep_swim_t*600))*1.4)))*var.sheep_swim_blend)",
+     "front_right_leg.rx": "((((0)+((((0)+(torad(1*(((keyframe(var.sheep_gait_phase*18,73.6,78.196323,72.667737,57.339,22.892667,-11.553667,-46,-68.981615,-74.743841,-67.045,-51.417778,-35.790556,-20.163333,-4.536111,11.091111,26.718333,42.345556,57.972778,73.6))*0.85*(1-var.sheep_run_blend)+(keyframe(var.sheep_gait_phase*12,41.35,31.430678,9.964011,-11.502655,-32.954004,-37.402002,-41.85,-31.518598,-11.519367,8.4973,28.513966,34.944234,41.35))*0.8*var.sheep_run_blend)))*var.sheep_move_gate))+(torad(1*(keyframe(var.sheep_graze_t*40,0,5,10,15,20,12.8375,5.675,-1.4875,-8.65,-15.8125,-22.975,-30.1375,-37.3,-36.725,-36.15,-35.575,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35,-35.625,-36.25,-36.875,-37.5,-33.75,-30,-26.25,-22.5,-18.75,-15,-11.25,-7.5,-3.75,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))-(0))*(1-var.sheep_air_pose_blend)+(torad(1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_jump_blend+(torad(1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,-0.333333,-0.9,-1.9175,-3.196667,-4.35,-5,-5.166667,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2))))*var.sheep_fall_blend)+(torad(1*(if(var.sheep_turn_amount>0,(keyframe(var.sheep_turn_phase*24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)),(keyframe(var.sheep_turn_phase*24,-9,-7.5,-6,-4.5,-3,-1.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_turn_blend))))*(1-var.sheep_swim_blend)+(torad(0+(-20+cos(torad(var.sheep_swim_t*600))*30)))*var.sheep_swim_blend)",
+     "alt_head.rx": "(((0)+(((((0)+(torad(((sin(torad(var.sheep_gait_phase*720+22))*6.2+1)*0.85*(1-var.sheep_run_blend)+(cos(torad(var.sheep_gait_phase*360+45))*10)*0.8*var.sheep_run_blend))*var.sheep_move_gate))+(torad(1*(keyframe(var.sheep_graze_t*40,0,1.325,2.65,1.13,-0.39,-3.8475,-7.305,-10.7625,-14.22,-14.61,-15,-11.285,-7.57,3.0725,13.715,24.3575,35,32.5,30,30.15,30.3,32.6,34.019266,34.628728,35.102223,35.180922,36.279271,38,39.720729,40.819078,40.897777,39.928363,38.261467,36.5,35.281077,35.045577,35.87868,37.479055,39.267855,40.598076,40.988584,40.298133,38.776457,36.97394,35.542544,35,35.542544,36.97394,38.776457,40.298133,40.988584,40.598076,39.267855,37.479055,35.87868,35.045577,35.281077,36.5,38.261467,39.928363,40.897777,40.819078,39.720729,38,36.279271,35.180922,35.102223,36.393031,37.825689,38.75,38.906308,38.492404,38,40.15,42.3,42.15,42,37.35,32.7,23.9,15.1,6.3,-2.5,-5.325,-8.15,-7.325,-6.5,-2.765,0.97,2.985,5,5,5,2.5,0)))*var.sheep_graze_active))+(torad(keyframe(var.sheep_random_kf,0,3.201281,6.4,5.7,5,2.30108,-0.4,-6.002241,-11.6,-14.6,-15.1002,-15.6,-12.4,-4.997039,2.4,15.4,17.95102,20.5,19.420235,18.341333,17.262431,16.183529,15.104627,14.025725,12.946823,11.867921,10.789019,9.710117,8.631216,7.552314,6.473412,5.39451,4.315608,3.236706,2.157804,1.078902,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))-(0))*(1-var.sheep_air_pose_blend)+(torad(1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,7.996076,24.709881,32.529477,34,30.682314,22.753821,12.351381,3.405091,-2.504483,-7.557862,-10.165356,-11.919031,-12.56128,-12.168501,-11.490577,-10.435277,-8.523518,-6.728566,-5.75))))*var.sheep_jump_blend+(torad(1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,-3.625,-10.116667,-14.55,-15.733333,-14.291667,-10.75,-2.520833,5.708333,10.2,11.4,11.4,11.4,11.4,11.4,11.4,11.4,11.4,11.4,11.4,11.4,11.4,11.4,11.4,11.4))))*var.sheep_fall_blend)+(torad(1*(keyframe(clamp(var.sheep_bounce_t/0.6667*16,0,16),0,0,-5.5,-7.1,-3.9,3.263925,10.43,14.3,15.22,14.55,11.9,6.595616,3.35,1.6,0.79976,0,0)))*var.sheep_bounce_gate))+(torad(head_pitch))",
+     "alt_head.ty": "(((-3.75)+((((-3.75)+(((-(cos(torad(var.sheep_gait_phase*720+30))*-1.125-1.5))*0.85*(1-var.sheep_run_blend)+(-(cos(torad(var.sheep_gait_phase*360-30))*2-2))*0.8*var.sheep_run_blend)*var.sheep_move_gate))+(-1*(keyframe(var.sheep_graze_t*40,0,0.265,0.53,1.015,1.5,1.55,1.6,1.175,0.75,-0.6875,-2.125,-3.5625,-5,-7.075,-9.15,-11.225,-13.3,-13.05,-12.8,-12.9,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-13,-12.3,-11.6,-10.475,-9.35,-8.225,-7.1,-5.6625,-4.225,-2.7875,-1.35,-0.425,0.5,0.625,0.75,0.625,0.5,0.25,0,0,0,0,0,0,0))*var.sheep_graze_active))-(-3.75))*(1-var.sheep_air_pose_blend)+(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,-3.211157,-4.084116,-3.883815,-2.605878,-0.770879,-0.236803,-0.503057,-1.210071,-1.558884,-1.574471,-1.506558,-1.264563,-1.00414,-0.731895,-0.580939,-0.472598,-0.448399,-0.424199,-0.4)))*var.sheep_jump_blend+(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0.5,1.4,2.075,2.383333,2.458333,2.5,2.5,2.5,2.5,2.5,2.5,2.5,2.5,2.5,2.5,2.5,2.5,2.5,2.5,2.5,2.5,2.5,2.5,2.5)))*var.sheep_fall_blend)+(-1*(keyframe(clamp(var.sheep_bounce_t/0.6667*16,0,16),0,0,0.04,0.04,-0.05,-0.3,-0.87,-1.15,-1.25,-1.15,-0.87,-0.349663,-0.1,0,0,0,0))*var.sheep_bounce_gate))+(-4)",
+     "torso.rx": "(((torad(90))+(torad(((cos(torad(var.sheep_gait_phase*720))*6.2+1)*0.85*(1-var.sheep_run_blend)+(sin(torad(var.sheep_gait_phase*360))*-7.4)*0.8*var.sheep_run_blend))*var.sheep_move_gate))+(torad(1*(keyframe(var.sheep_graze_t*40,0,-2.85,-5.7,-6.6,-7.5,-7.2,-6.9,-5.794345,-4.68869,-0.321455,4.04578,9.209785,14.37379,17.836895,21.3,22.679955,24.05991,23.529955,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,22.85,22.7,23.7,24.7,26.65,28.6,29.85,31.1,31.45,31.8,29.15,26.5,21.45,16.4,10.45,4.5,1.25,-2,-3.5,-5,-5.5,-6,-5,-4,-2,0,1,2,2,2,1,0,0,0)))*var.sheep_graze_active))+(torad(1*(keyframe(clamp(var.sheep_bounce_t/0.6667*16,0,16),0,0,5.4,6.2,5.7,4.02,0.74,-1.76,-2.8,-2.5,-1.4991,-0.499326,0,0,0,0,0)))*var.sheep_bounce_gate)",
+     "torso.ty": "((0)+(((-(sin(torad(var.sheep_gait_phase*720))*1.125-1.5))*0.85*(1-var.sheep_run_blend)+(-(cos(torad(var.sheep_gait_phase*360))*2-2))*0.8*var.sheep_run_blend)*var.sheep_move_gate))+(-1*(keyframe(var.sheep_graze_t*40,0,0.175,0.35,0.775,1.2,1.2,1.2,0.6,0,-1.35,-2.7,-3.8,-4.9,-5.45,-6,-6.2,-6.4,-6.4,-6.4,-6.2,-6,-5.999135,-5.99827,-5.997405,-5.99654,-5.995675,-5.99481,-5.993945,-5.99308,-5.992215,-5.99135,-5.990485,-5.98962,-5.988755,-5.98789,-5.987025,-5.98616,-5.985295,-5.98443,-5.983565,-5.9827,-5.981835,-5.98097,-5.980105,-5.97924,-5.978375,-5.97751,-5.979759,-5.982008,-5.984257,-5.986506,-5.988755,-5.991004,-5.993253,-5.995502,-5.997751,-6,-5.9518,-5.9036,-5.8554,-5.8072,-5.66932,-5.53144,-5.39356,-5.25568,-4.94176,-4.62784,-4.31392,-4,-3.352982,-2.705965,-2.058948,-1.41193,-0.933948,-0.455965,0.022018,0.5,0.657495,0.81499,0.675125,0.53526,0.26763,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active)",
+     "ear_left.ry": "(((0)+(((((0)+(torad(((0)*0.85*(1-var.sheep_run_blend)+(-15+cos(torad(var.sheep_gait_phase*360))*20)*0.8*var.sheep_run_blend))*var.sheep_move_gate))+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0,0,0.273437,0.9375,1.757813,2.5,2.929688,2.8125,1.914062,0,-9.092734,-22.580625,-34.778203,-40,-37.37412,-30.822963,-22.01375,-12.613704,-4.290046,1.29,2.56,3.83,4.405,4.98,4.655,4.33,3.22,2.11,0.62,-0.87,-2.205,-3.54,-4.23,-4.92,-4.725,-4.53,-3.515,-2.5,-1.03,0.44,1.825,3.21,4.02,4.83,4.765,4.7,3.785,2.87,1.435,0,-1.435,-2.87,-3.785,-4.7,-4.765,-4.83,-4.02,-3.21,-1.825,-0.44,1.03,2.5,1.43375,0,-0.144676,-0.185185,-0.15625,-0.092593,-0.028935,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))+(torad(keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.102418,-0.581448,-6.698624,-8.931855,-6.605327,-1.370849,3.868086,6.554389,5.723808,2.292997,-1.655429,-4.102053,-4.123366,-2.199965,0.275217,1.914061,2.104284,1.209493,0.152553,-0.289203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))-(0))*(1-var.sheep_air_pose_blend)+(torad(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,-0.479238,-1.084718,-0.568085,1.203465,3.757344,6.867207,10.067944,12.894446,14.881602,15.569204,15.942549,16.098944,16.084592,15.945691,15.728444,15.479051,15.243712,15.068628,15))))*var.sheep_jump_blend+(torad(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,1.010044,2.460288,4.260069,6.402963,9.321674,12.378889,14.700764,15.418326,15.670078,15.692036,15.560799,15.352963,15.145127,15.01389,15,15,15,15,15,15,15,15,15,15))))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(torad(0+(0)))*var.sheep_swim_blend)",
+     "ear_left.rz": "((((torad(-10))+((((((torad(-10))+(torad(((sin(torad(var.sheep_gait_phase*720-30))*20)*0.85*(1-var.sheep_run_blend)+(cos(torad(var.sheep_gait_phase*360+25))*20)*0.8*var.sheep_run_blend))*var.sheep_move_gate))+(torad(1*(keyframe(var.sheep_graze_t*40,0,0.769676,1.574074,2.65625,4.259259,6.626157,10,13.952637,19.433594,25.783691,32.34375,38.45459,43.457031,46.691895,47.5,40.375078,25.791875,10.187734,0,-2.148704,-2.027407,-0.4525,1.75963,3.792593,4.83,4.02,3.21,1.825,0.44,-1.03,-2.5,-3.515,-4.53,-4.725,-4.92,-4.23,-3.54,-2.205,-0.87,0.62,2.11,3.22,4.33,4.655,4.98,4.405,3.83,2.56,1.29,-0.21,-1.71,-2.905,-4.1,-4.55,-5,-4.55,-4.1,-2.905,-1.71,-0.21,1.29,2.56,3.83,4.405,4.98,4.655,4.33,3.843125,0,-3.531829,-8.376296,-13.864375,-19.327037,-24.095255,-27.5,-29.739583,-31.388889,-32.34375,-32.5,-31.753472,-30,-26.533565,-21.296296,-15.15625,-8.981481,-3.640046,0,1.435547,2.109375,2.197266,1.875,1.318359,0.703125,0.205078,0)))*var.sheep_graze_active))+(torad(keyframe(var.sheep_random_kf,0.01,1.605741,3.617593,3.755,-2.576814,-9.37,-10.754864,-11.420707,-11.061524,-9.37,-3.919444,3.718333,10.315,13.753333,17.191667,20.63,0.894118,-23.959396,-16.076172,-1.247478,12.536337,18.660835,15.053325,4.712571,-6.402049,-12.753623,-11.985191,-5.678708,2.049165,7.098475,7.556632,4.341344,0.154843,-2.427303,-2.490589,-1.045835,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0,(sin(torad(age*25-87))*-21)*0.083333,(sin(torad(age*25-87))*-21)*0.166667,(sin(torad(age*25-87))*-21)*0.25,(sin(torad(age*25-87))*-21)*0.333333,(sin(torad(age*25-87))*-21)*0.416667,(sin(torad(age*25-87))*-21)*0.5,(sin(torad(age*25-87))*-21)*0.583333,(sin(torad(age*25-87))*-21)*0.666667,(sin(torad(age*25-87))*-21)*0.75,(sin(torad(age*25-87))*-21)*0.833333,(sin(torad(age*25-87))*-21)*0.916667,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,(sin(torad(age*25-87))*-21)*0.966667,(sin(torad(age*25-87))*-21)*0.933333,(sin(torad(age*25-87))*-21)*0.9,(sin(torad(age*25-87))*-21)*0.866667,(sin(torad(age*25-87))*-21)*0.833333,(sin(torad(age*25-87))*-21)*0.8,(sin(torad(age*25-87))*-21)*0.766667,(sin(torad(age*25-87))*-21)*0.733333,(sin(torad(age*25-87))*-21)*0.7,(sin(torad(age*25-87))*-21)*0.666667,(sin(torad(age*25-87))*-21)*0.633333,(sin(torad(age*25-87))*-21)*0.6,(sin(torad(age*25-87))*-21)*0.566667,(sin(torad(age*25-87))*-21)*0.533333,(sin(torad(age*25-87))*-21)*0.5,(sin(torad(age*25-87))*-21)*0.466667,(sin(torad(age*25-87))*-21)*0.433333,(sin(torad(age*25-87))*-21)*0.4,(sin(torad(age*25-87))*-21)*0.366667,(sin(torad(age*25-87))*-21)*0.333333,(sin(torad(age*25-87))*-21)*0.3,(sin(torad(age*25-87))*-21)*0.266667,(sin(torad(age*25-87))*-21)*0.233333,(sin(torad(age*25-87))*-21)*0.2,(sin(torad(age*25-87))*-21)*0.166667,(sin(torad(age*25-87))*-21)*0.133333,(sin(torad(age*25-87))*-21)*0.1,(sin(torad(age*25-87))*-21)*0.066667,(sin(torad(age*25-87))*-21)*0.033333,0))*var.sheep_random_gate))+(torad(-cos(torad(age*9-90))*3)))-(torad(-10)))*(1-var.sheep_air_pose_blend)+(torad(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,-3.590242,-8.443813,-9.317629,-4.601842,3.187075,12.985904,23.21327,32.2878,38.628121,40.783507,41.95332,42.443359,42.398387,41.963166,41.282458,40.501026,39.763631,39.215035,39))))*var.sheep_jump_blend+(torad(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,3.17053,7.722387,13.410972,20.309663,30.077662,40.200444,47.257487,48.694683,48.332719,46.969308,44.996136,42.804889,40.787253,39.334915,38.752808,38.479167,38.35201,38.34082,38.41508,38.544271,38.697876,38.845378,38.956258,39))))*var.sheep_fall_blend)+(torad(-1*(keyframe(clamp(var.sheep_bounce_t/0.6667*16,0,16),0,17.519688,40.816837,52,48.088876,38.774972,26.433581,13.44006,2.169764,-5,-7.99219,-6.061999,-2.351562,0,0.37037,0.185199,0)))*var.sheep_bounce_gate))*(1-var.sheep_swim_blend)+(torad(-10+(-sin(torad(var.sheep_swim_t*600 - 45 - 22.5))*10)))*var.sheep_swim_blend)",
+     "ear_right.ry": "(((0)+(((((0)+(torad(((0)*0.85*(1-var.sheep_run_blend)+(15-cos(torad(var.sheep_gait_phase*360))*20)*0.8*var.sheep_run_blend))*var.sheep_move_gate))+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0,0,-0.273437,-0.9375,-1.757813,-2.5,-2.929688,-2.8125,-1.914062,0,9.092734,22.580625,34.778203,40,37.37412,30.822963,22.01375,12.613704,4.290046,-1.29,-2.56,-3.83,-4.405,-4.98,-4.655,-4.33,-3.22,-2.11,-0.62,0.87,2.205,3.54,4.23,4.92,4.725,4.53,3.515,2.5,1.03,-0.44,-1.825,-3.21,-4.02,-4.83,-4.765,-4.7,-3.785,-2.87,-1.435,0,1.435,2.87,3.785,4.7,4.765,4.83,4.02,3.21,1.825,0.44,-1.03,-2.5,-1.43375,0,0.144676,0.185185,0.15625,0.092593,0.028935,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))+(torad(keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3.102418,-0.581448,-6.698624,-8.931855,-6.605327,-1.370849,3.868086,6.554389,5.723808,2.292997,-1.655429,-4.102053,-4.123366,-2.199965,0.275217,1.914061,2.104284,1.209493,0.152553,-0.289203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))-(0))*(1-var.sheep_air_pose_blend)+(torad(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0.479238,1.084718,0.568085,-1.203465,-3.757344,-6.867207,-10.067944,-12.894446,-14.881602,-15.569204,-15.942549,-16.098944,-16.084592,-15.945691,-15.728444,-15.479051,-15.243712,-15.068628,-15))))*var.sheep_jump_blend+(torad(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,-1.010044,-2.460288,-4.260069,-6.402963,-9.321674,-12.378889,-14.700764,-15.418326,-15.670078,-15.692036,-15.560799,-15.352963,-15.145127,-15.01389,-15,-15,-15,-15,-15,-15,-15,-15,-15,-15))))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(torad(0+(0)))*var.sheep_swim_blend)",
+     "ear_right.rz": "((((torad(10))+((((((torad(10))+(torad(((-sin(torad(var.sheep_gait_phase*720-15))*20)*0.85*(1-var.sheep_run_blend)+(-cos(torad(var.sheep_gait_phase*360+25))*20)*0.8*var.sheep_run_blend))*var.sheep_move_gate))+(torad(1*(keyframe(var.sheep_graze_t*40,0,-0.769676,-1.574074,-2.65625,-4.259259,-6.626157,-10,-13.952637,-19.433594,-25.783691,-32.34375,-38.45459,-43.457031,-46.691895,-47.5,-40.375078,-25.791875,-10.187734,0,2.148704,2.027407,0.4525,-1.75963,-3.792593,-4.83,-4.02,-3.21,-1.825,-0.44,1.03,2.5,3.515,4.53,4.725,4.92,4.23,3.54,2.205,0.87,-0.62,-2.11,-3.22,-4.33,-4.655,-4.98,-4.405,-3.83,-2.56,-1.29,0.21,1.71,2.905,4.1,4.55,5,4.55,4.1,2.905,1.71,0.21,-1.29,-2.56,-3.83,-4.405,-4.98,-4.655,-4.33,-3.843125,0,3.531829,8.376296,13.864375,19.327037,24.095255,27.5,29.739583,31.388889,32.34375,32.5,31.753472,30,26.533565,21.296296,15.15625,8.981481,3.640046,0,-1.435547,-2.109375,-2.197266,-1.875,-1.318359,-0.703125,-0.205078,0)))*var.sheep_graze_active))+(torad(keyframe(var.sheep_random_kf,-0.01,-1.605741,-3.617593,-3.755,2.576814,9.37,10.754864,11.420707,11.061524,9.37,3.919444,-3.718333,-10.315,-13.753333,-17.191667,-20.63,-19.727627,-23.959396,-16.076172,-1.247478,12.536337,18.660835,15.053325,4.712571,-6.402049,-12.753623,-11.985191,-5.678708,2.049165,7.098475,7.556632,4.341344,0.154843,-2.427303,-2.490589,-1.045835,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0,(sin(torad(age*25-87))*-21)*0.083333,(sin(torad(age*25-87))*-21)*0.166667,(sin(torad(age*25-87))*-21)*0.25,(sin(torad(age*25-87))*-21)*0.333333,(sin(torad(age*25-87))*-21)*0.416667,(sin(torad(age*25-87))*-21)*0.5,(sin(torad(age*25-87))*-21)*0.583333,(sin(torad(age*25-87))*-21)*0.666667,(sin(torad(age*25-87))*-21)*0.75,(sin(torad(age*25-87))*-21)*0.833333,(sin(torad(age*25-87))*-21)*0.916667,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,sin(torad(age*25-87))*-21,(sin(torad(age*25-87))*-21)*0.966667,(sin(torad(age*25-87))*-21)*0.933333,(sin(torad(age*25-87))*-21)*0.9,(sin(torad(age*25-87))*-21)*0.866667,(sin(torad(age*25-87))*-21)*0.833333,(sin(torad(age*25-87))*-21)*0.8,(sin(torad(age*25-87))*-21)*0.766667,(sin(torad(age*25-87))*-21)*0.733333,(sin(torad(age*25-87))*-21)*0.7,(sin(torad(age*25-87))*-21)*0.666667,(sin(torad(age*25-87))*-21)*0.633333,(sin(torad(age*25-87))*-21)*0.6,(sin(torad(age*25-87))*-21)*0.566667,(sin(torad(age*25-87))*-21)*0.533333,(sin(torad(age*25-87))*-21)*0.5,(sin(torad(age*25-87))*-21)*0.466667,(sin(torad(age*25-87))*-21)*0.433333,(sin(torad(age*25-87))*-21)*0.4,(sin(torad(age*25-87))*-21)*0.366667,(sin(torad(age*25-87))*-21)*0.333333,(sin(torad(age*25-87))*-21)*0.3,(sin(torad(age*25-87))*-21)*0.266667,(sin(torad(age*25-87))*-21)*0.233333,(sin(torad(age*25-87))*-21)*0.2,(sin(torad(age*25-87))*-21)*0.166667,(sin(torad(age*25-87))*-21)*0.133333,(sin(torad(age*25-87))*-21)*0.1,(sin(torad(age*25-87))*-21)*0.066667,(sin(torad(age*25-87))*-21)*0.033333,0))*var.sheep_random_gate))+(torad(cos(torad(age*9-90))*3)))-(torad(10)))*(1-var.sheep_air_pose_blend)+(torad(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,3.590242,8.443813,9.317629,4.601842,-3.187075,-12.985904,-23.21327,-32.2878,-38.628121,-40.783507,-41.95332,-42.443359,-42.398387,-41.963166,-41.282458,-40.501026,-39.763631,-39.215035,-39))))*var.sheep_jump_blend+(torad(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,-3.17053,-7.722387,-13.410972,-20.309663,-30.077662,-40.200444,-47.257487,-48.694683,-48.332719,-46.969308,-44.996136,-42.804889,-40.787253,-39.334915,-38.752808,-38.479167,-38.35201,-38.34082,-38.41508,-38.544271,-38.697876,-38.845378,-38.956258,-39))))*var.sheep_fall_blend)+(torad(-1*(keyframe(clamp(var.sheep_bounce_t/0.6667*16,0,16),0,-17.519688,-40.816837,-52,-46.654428,-34.285276,-18.888201,-4.458935,5,9.279536,7.178504,4.614311,2.282285,0,-0.341926,-0.170976,0)))*var.sheep_bounce_gate))*(1-var.sheep_swim_blend)+(torad(10+(sin(torad(var.sheep_swim_t*600 - 45 - 22.5))*10)))*var.sheep_swim_blend)",
+     "alt_head.ry": "clamp(((0)+((((0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.991692,2.349232,3.746431,4.829629,4.116553,3.060893,1.776745,0.394276,-0.953365,-2.142857,-3.071989,-3.668389,-3.894962,-3.751649,-3.273492,-2.525381,-1.594132,-0.578827,0.419548,1.308104,2.010685,2.474358,2.673191,2.609081,2.309699,1.823915,1.215321,0.554612,-0.088277,-0.651467,-1.087074,-1.365253,-1.475991,-1.428571,-1.248915,-0.975181,-0.652244,-0.325733,-0.036349,0.184871,0.319821,0.364783,0.329957,0.237189,0.116226,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))+(torad(keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.362475,-2.747545,-4.575245,-3.997662,-1.554487,1.350023,3.242711,3.328698,1.811218,-0.336044,-1.965773,-2.368321,-1.572618,-0.213846,0.905609,1.280268,0.926489,0.270005,-0.194311,-0.235157,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))-(0))*(1-var.sheep_air_pose_blend)+(torad(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_jump_blend+(torad(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_fall_blend)+(torad(head_yaw)),torad(-70),torad(70))",
+     "alt_head.rz": "(0)+((((0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.760952,0.85505,0.163573,-1.294095,-2.622534,-3.647831,-4.289441,-4.506595,-4.300351,-3.711537,-2.814959,-1.710598,-0.512781,0.661517,1.704072,2.525381,3.062299,3.282693,3.186787,2.805238,2.194278,1.428571,0.592632,-0.228265,-0.956709,-1.530447,-1.907671,-2.069841,-2.021883,-1.789891,-1.416702,-0.955961,-0.465378,0,0.393781,0.682829,0.850021,0.894945,0.83254,0.689947,0.502019,0.306089,0.136673,0.020751,-0.025767,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))+(torad(keyframe(var.sheep_random_kf,0.01,0.004998,0,-0.1,-0.2,-0.39992,-0.6,-0.29988,0,0,0,0,0,-2.2509,-4.5,-11.5,-11.686725,-10.025854,-2.941713,4.819536,9.392485,8.904082,4.198922,-1.89024,-6.204364,-6.895892,-4.193797,0.005263,3.364617,4.39729,3.110867,0.735599,-1.191045,-1.771974,-1.164916,-0.273966,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0,(sin(torad(age*25-22))*-11)*0.083333,(sin(torad(age*25-22))*-11)*0.166667,(sin(torad(age*25-22))*-11)*0.25,(sin(torad(age*25-22))*-11)*0.333333,(sin(torad(age*25-22))*-11)*0.416667,(sin(torad(age*25-22))*-11)*0.5,(sin(torad(age*25-22))*-11)*0.583333,(sin(torad(age*25-22))*-11)*0.666667,(sin(torad(age*25-22))*-11)*0.75,(sin(torad(age*25-22))*-11)*0.833333,(sin(torad(age*25-22))*-11)*0.916667,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,sin(torad(age*25-22))*-11,(sin(torad(age*25-22))*-11)*0.966667,(sin(torad(age*25-22))*-11)*0.933333,(sin(torad(age*25-22))*-11)*0.9,(sin(torad(age*25-22))*-11)*0.866667,(sin(torad(age*25-22))*-11)*0.833333,(sin(torad(age*25-22))*-11)*0.8,(sin(torad(age*25-22))*-11)*0.766667,(sin(torad(age*25-22))*-11)*0.733333,(sin(torad(age*25-22))*-11)*0.7,(sin(torad(age*25-22))*-11)*0.666667,(sin(torad(age*25-22))*-11)*0.633333,(sin(torad(age*25-22))*-11)*0.6,(sin(torad(age*25-22))*-11)*0.566667,(sin(torad(age*25-22))*-11)*0.533333,(sin(torad(age*25-22))*-11)*0.5,(sin(torad(age*25-22))*-11)*0.466667,(sin(torad(age*25-22))*-11)*0.433333,(sin(torad(age*25-22))*-11)*0.4,(sin(torad(age*25-22))*-11)*0.366667,(sin(torad(age*25-22))*-11)*0.333333,(sin(torad(age*25-22))*-11)*0.3,(sin(torad(age*25-22))*-11)*0.266667,(sin(torad(age*25-22))*-11)*0.233333,(sin(torad(age*25-22))*-11)*0.2,(sin(torad(age*25-22))*-11)*0.166667,(sin(torad(age*25-22))*-11)*0.133333,(sin(torad(age*25-22))*-11)*0.1,(sin(torad(age*25-22))*-11)*0.066667,(sin(torad(age*25-22))*-11)*0.033333,0))*var.sheep_random_gate))-(0))*(1-var.sheep_air_pose_blend)+(torad(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_jump_blend+(torad(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_fall_blend",
+     "alt_head.tz": "((-7)+(((-7)+(1*(keyframe(var.sheep_graze_t*40,0,0,0,0.05,0.1,0.2,0.3,0.45,0.6,0.75,0.9,1.05,1.2,1.275,1.35,1.425,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.45,1.4,1.3,1.2,1.1,1,0.8625,0.725,0.5875,0.45,0.325,0.2,0.125,0.05,0.04,0.03,0.015,0,0,0,0,0,0,0))*var.sheep_graze_active))-(-7))*(1-var.sheep_air_pose_blend)+(1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0.476095,-0.094405,-1.353698,-2.986204,-3.91059,-4.073605,-3.81059,-3.325873,-2.878008,-2.640939,-2.462553,-2.396005,-2.443716,-2.564713,-2.691679,-2.800354,-2.866903,-2.933451,-3)))*var.sheep_jump_blend+(1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0.041667,0.21,0.605,1.126667,1.595,1.87,1.978333,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2)))*var.sheep_fall_blend)+(4)",
+     "torso.ry": "(0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,-0.108135,-0.21627,-0.529305,-0.84234,-1.25,-1.65766,-1.970695,-2.28373,-2.391865,-2.5,-2.15,-1.8,-1.45,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.1,-1.57129,-2.04258,-3.79629,-5.55,-7.30371,-9.05742,-9.52871,-10,-9.75,-9.5,-8.85,-8.2,-7.1,-6,-4.85,-3.7,-2.62598,-1.55196,-0.77598,0,0.4,0.8,0.75705,0.7141,0.35705,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active)",
+     "torso.rz": "((0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,1.25,2.5,3.75,5,4.969725,4.93945,4.8518,4.76415,4.65,4.53585,4.4482,4.36055,4.330275,4.3,3.7875,3.275,2.7625,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.25,2.961575,3.67315,6.531355,9.38956,10.35921,11.32886,11.61443,11.9,11.829955,11.75991,10.65681,9.55371,7.626855,5.7,3.4,1.1,0.2,-0.7,-1.00413,-1.30826,-1.28413,-1.26,-0.93,-0.6,-0.3,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))+(torad(keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.034907,-1.647243,-3.586875,-3.850807,-1.213305,2.841986,5.09572,4.639212,2.001792,-1.267919,-3.493911,-3.731746,-2.154412,0.183608,2.009587,2.521935,1.733898,0.329004,-0.828875,-1.210041,-0.858571,-0.250145,0.099326,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate)",
+     "torso.tx": "(0)+(-1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0,0,-0.01324,-0.02648,-0.07574,-0.125,-0.17426,-0.22352,-0.23676,-0.25,-0.245,-0.24,-0.235,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.23,-0.218967,-0.207935,-0.196903,-0.18587,-0.161903,-0.137935,-0.113967,-0.09,-0.069245,-0.04849,-0.02622,-0.00395,-0.001975,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active)",
+     "torso.tz": "(0)+(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0,0,0.05,0.1,0.251985,0.40397,0.631985,0.86,1.13,1.4,1.6,1.8,1.9,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2.020478,2.040955,2.061433,2.08191,2.074067,2.066225,2.058383,2.05054,1.962905,1.87527,1.787635,1.7,1.57198,1.44396,1.31594,1.18792,1.03594,0.88396,0.73198,0.58,0.426335,0.27267,0.166825,0.06098,0.03049,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active)",
+     "back_left_leg.ry": "(((0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,-0.35,-0.7,-1.55,-2.4,-3.8,-5.2,-6,-6.8,-7.15,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.5,-7.3,-7.1,-6.3,-5.5,-4,-2.5,-1.6,-0.7,-0.35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))*(1-var.sheep_swim_blend)+(torad(0+(0)))*var.sheep_swim_blend)",
+     "back_left_leg.rz": "(((((0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0.2,0.4,0.9,1.4,2.45,3.5,4.05,4.6,4.8,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4.8,4.6,3.95,3.3,2.35,1.4,0.9,0.4,0.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))+((keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.083333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.25))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.416667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.583333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.75))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.916667))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.944444))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.888889))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.777778))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.722222))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.611111))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.555556))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.444444))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.388889))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.277778))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.222222))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.111111))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.055556))/11.5,-0.999,0.999)),0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))+(torad(-1*(if(var.sheep_turn_amount>0,(keyframe(var.sheep_turn_phase*24,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,12.5,10,7.5,5,2.5,0,0,0)),(keyframe(var.sheep_turn_phase*24,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-7.5,-6,-4.5,-3,-1.5,0,0,0)))*var.sheep_turn_blend))))*(1-var.sheep_swim_blend)+(torad(0+(5+sin(torad(var.sheep_swim_t*600+45))*8)))*var.sheep_swim_blend)",
+     "back_left_leg.tx": "(((0)+((((0)+(-1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,-0.075,-0.15,-0.225,-0.3,-0.4,-0.5,-0.6,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.7,-0.65,-0.6,-0.545,-0.49,-0.41,-0.33,-0.2475,-0.165,-0.0825,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active))+(-1*(keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,(cos(torad(age*25-22.5))*-1)*0.083333,(cos(torad(age*25-22.5))*-1)*0.166667,(cos(torad(age*25-22.5))*-1)*0.25,(cos(torad(age*25-22.5))*-1)*0.333333,(cos(torad(age*25-22.5))*-1)*0.416667,(cos(torad(age*25-22.5))*-1)*0.5,(cos(torad(age*25-22.5))*-1)*0.583333,(cos(torad(age*25-22.5))*-1)*0.666667,(cos(torad(age*25-22.5))*-1)*0.75,(cos(torad(age*25-22.5))*-1)*0.833333,(cos(torad(age*25-22.5))*-1)*0.916667,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,(cos(torad(age*25-22.5))*-1)*0.944444,(cos(torad(age*25-22.5))*-1)*0.888889,(cos(torad(age*25-22.5))*-1)*0.833333,(cos(torad(age*25-22.5))*-1)*0.777778,(cos(torad(age*25-22.5))*-1)*0.722222,(cos(torad(age*25-22.5))*-1)*0.666667,(cos(torad(age*25-22.5))*-1)*0.611111,(cos(torad(age*25-22.5))*-1)*0.555556,(cos(torad(age*25-22.5))*-1)*0.5,(cos(torad(age*25-22.5))*-1)*0.444444,(cos(torad(age*25-22.5))*-1)*0.388889,(cos(torad(age*25-22.5))*-1)*0.333333,(cos(torad(age*25-22.5))*-1)*0.277778,(cos(torad(age*25-22.5))*-1)*0.222222,(cos(torad(age*25-22.5))*-1)*0.166667,(cos(torad(age*25-22.5))*-1)*0.111111,(cos(torad(age*25-22.5))*-1)*0.055556,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))-(0))*(1-var.sheep_air_pose_blend)+(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_jump_blend+(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(0+(-1*(0)))*var.sheep_swim_blend)",
+     "back_left_leg.ty": "(((-11.5)+((((-11.5)+(-1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0.5,1,1.25,1.5,1.2,0.9,0.2,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.45,-0.4,-0.1,0.2,0.35,0.5,0.43,0.36,0.195,0.03,-0.135,-0.3,-0.275,-0.25,-0.15,-0.05,-0.025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active))+((keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,-0.2,-0.8,-1.2,-1.35006,-1.5,-1.375,-0.9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.083333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.25))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.416667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.583333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.75))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.916667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.944444))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.888889))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.777778))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.722222))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.611111))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.555556))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.444444))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.388889))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.277778))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.222222))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.111111))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.055556))/11.5,-0.999,0.999)))),0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))-(-11.5))*(1-var.sheep_air_pose_blend)+(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,-1.234544,-2.469087,-3.703631,-4.938174,-5.821179,-6.120816,-5.521179,-4.551746,-3.874513,-3.320026,-2.977029,-2.634032,-2.453893,-2.378213,-2.302533,-2.25,-2.25,-2.25,-2.25)))*var.sheep_jump_blend+(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0.375,1.016667,2.0175,3.213333,4.308333,5,5.166667,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2)))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(-11.5+(-1*(-6+cos(torad(var.sheep_swim_t*600))*-1.8)))*var.sheep_swim_blend)",
+     "back_right_leg.ry": "(((0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0.35,0.7,1.55,2.4,3.8,5.2,6,6.8,7.15,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.5,7.3,7.1,6.3,5.5,4,2.5,1.6,0.7,0.35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))*(1-var.sheep_swim_blend)+(torad(0+(0)))*var.sheep_swim_blend)",
+     "back_right_leg.rz": "(((((0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,-0.2,-0.4,-0.9,-1.4,-2.45,-3.5,-4.05,-4.6,-4.8,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-4.8,-4.6,-3.95,-3.3,-2.35,-1.4,-0.9,-0.4,-0.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))+((keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.083333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.25))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.416667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.583333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.75))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.916667))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.944444))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.888889))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.777778))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.722222))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.611111))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.555556))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.444444))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.388889))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.277778))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.222222))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.111111))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.055556))/11.5,-0.999,0.999)),0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))+(torad(-1*(if(var.sheep_turn_amount>0,(keyframe(var.sheep_turn_phase*24,9,9,9,9,9,9,9,7.5,6,4.5,3,1.5,0,0,0,0,0,0,0,0,0,0,0,0,0)),(keyframe(var.sheep_turn_phase*24,-15,-15,-15,-15,-15,-15,-15,-12.5,-10,-7.5,-5,-2.5,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_turn_blend))))*(1-var.sheep_swim_blend)+(torad(0+(-5+sin(torad(var.sheep_swim_t*600+45))*8)))*var.sheep_swim_blend)",
+     "back_right_leg.tx": "(((0)+((((0)+(-1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0.075,0.15,0.225,0.3,0.4,0.5,0.6,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.65,0.6,0.545,0.49,0.41,0.33,0.2475,0.165,0.0825,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active))+(-1*(keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,(cos(torad(age*25-22.5))*-1)*0.083333,(cos(torad(age*25-22.5))*-1)*0.166667,(cos(torad(age*25-22.5))*-1)*0.25,(cos(torad(age*25-22.5))*-1)*0.333333,(cos(torad(age*25-22.5))*-1)*0.416667,(cos(torad(age*25-22.5))*-1)*0.5,(cos(torad(age*25-22.5))*-1)*0.583333,(cos(torad(age*25-22.5))*-1)*0.666667,(cos(torad(age*25-22.5))*-1)*0.75,(cos(torad(age*25-22.5))*-1)*0.833333,(cos(torad(age*25-22.5))*-1)*0.916667,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,(cos(torad(age*25-22.5))*-1)*0.944444,(cos(torad(age*25-22.5))*-1)*0.888889,(cos(torad(age*25-22.5))*-1)*0.833333,(cos(torad(age*25-22.5))*-1)*0.777778,(cos(torad(age*25-22.5))*-1)*0.722222,(cos(torad(age*25-22.5))*-1)*0.666667,(cos(torad(age*25-22.5))*-1)*0.611111,(cos(torad(age*25-22.5))*-1)*0.555556,(cos(torad(age*25-22.5))*-1)*0.5,(cos(torad(age*25-22.5))*-1)*0.444444,(cos(torad(age*25-22.5))*-1)*0.388889,(cos(torad(age*25-22.5))*-1)*0.333333,(cos(torad(age*25-22.5))*-1)*0.277778,(cos(torad(age*25-22.5))*-1)*0.222222,(cos(torad(age*25-22.5))*-1)*0.166667,(cos(torad(age*25-22.5))*-1)*0.111111,(cos(torad(age*25-22.5))*-1)*0.055556,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))-(0))*(1-var.sheep_air_pose_blend)+(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_jump_blend+(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(0+(-1*(0)))*var.sheep_swim_blend)",
+     "back_right_leg.ty": "(((-11.5)+((((-11.5)+(-1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0.5,1,1.25,1.5,1.2,0.9,0.2,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.45,-0.4,-0.1,0.2,0.35,0.5,0.43,0.36,0.195,0.03,-0.135,-0.3,-0.2875,-0.275,-0.2625,-0.25,-0.2,-0.15,-0.1,-0.05,-0.0375,-0.025,-0.0125,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active))+((keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.083333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.25))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.416667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.583333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.75))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.916667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.944444))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.888889))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.777778))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.722222))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.611111))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.555556))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.444444))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.388889))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.277778))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.222222))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.111111))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.055556))/11.5,-0.999,0.999)))),0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))-(-11.5))*(1-var.sheep_air_pose_blend)+(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,-1.234544,-2.469087,-3.703631,-4.938174,-5.821179,-6.120816,-5.521179,-4.551746,-3.874513,-3.320026,-2.977029,-2.634032,-2.453893,-2.378213,-2.302533,-2.25,-2.25,-2.25,-2.25)))*var.sheep_jump_blend+(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0.375,1.016667,2.0175,3.213333,4.308333,5,5.166667,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2,5.2)))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(-11.5+(-1*(-6+cos(torad(var.sheep_swim_t*600))*1.8)))*var.sheep_swim_blend)",
+     "front_left_leg.ry": "(((0)+(((0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0,0,0.40625,0.8125,1.21875,1.625,2.03125,2.4375,2.84375,3.25,2.4375,1.625,0.8125,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1875,0.375,0.5625,0.75,0.9375,1.125,1.3125,1.5,1.40625,1.3125,1.21875,1.125,1.03125,0.9375,0.84375,0.75,0.65625,0.5625,0.46875,0.375,0.28125,0.1875,0.09375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))-(0))*(1-var.sheep_air_pose_blend)+(torad(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_jump_blend+(torad(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(torad(0+(0)))*var.sheep_swim_blend)",
+     "front_left_leg.rz": "((((0)+(((((0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0,0,6.125,12.25,18.375,24.5,30.625,36.75,42.875,49,49.25,49.5,49.75,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50.25,50.5,50.75,51,51.25,51.5,51.75,52,48.75,45.5,42.25,39,35.75,32.5,29.25,26,22.75,19.5,16.25,13,9.75,6.5,3.25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))+((keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.083333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.25))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.416667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.583333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.75))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.916667))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.944444))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.888889))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.777778))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.722222))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.611111))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.555556))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.444444))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.388889))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.277778))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.222222))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.111111))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.055556))/11.5,-0.999,0.999)),0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))+(torad(-sin(torad(age*2.25))*2.8)))-(0))*(1-var.sheep_air_pose_blend)+(torad(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_jump_blend+(torad(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_fall_blend)+(torad(-1*(if(var.sheep_turn_amount>0,(keyframe(var.sheep_turn_phase*24,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-9,-7.5,-6,-4.5,-3,-1.5,0,0,0,0,0,0,0,0,0)),(keyframe(var.sheep_turn_phase*24,15,15,15,15,15,15,15,15,15,15,15,12.5,10,7.5,5,2.5,0,0,0,0,0,0,0,0,0)))*var.sheep_turn_blend))))*(1-var.sheep_swim_blend)+(torad(0+(12+sin(torad(var.sheep_swim_t*600-45))*12)))*var.sheep_swim_blend)",
+     "front_left_leg.tx": "(((0)+(((((0)+(-1*(keyframe(var.sheep_graze_t*40,0,0,0,-0.075,-0.15,-0.3125,-0.475,-0.6375,-0.8,-1.05,-1.3,-1.45,-1.6,-1.65,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.7,-1.65,-1.6,-1.55,-1.5,-1.3375,-1.175,-1.0125,-0.85,-0.7125,-0.575,-0.4375,-0.3,-0.225,-0.15,-0.075,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active))+(-1*(keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,(cos(torad(age*25-22.5))*-1)*0.083333,(cos(torad(age*25-22.5))*-1)*0.166667,(cos(torad(age*25-22.5))*-1)*0.25,(cos(torad(age*25-22.5))*-1)*0.333333,(cos(torad(age*25-22.5))*-1)*0.416667,(cos(torad(age*25-22.5))*-1)*0.5,(cos(torad(age*25-22.5))*-1)*0.583333,(cos(torad(age*25-22.5))*-1)*0.666667,(cos(torad(age*25-22.5))*-1)*0.75,(cos(torad(age*25-22.5))*-1)*0.833333,(cos(torad(age*25-22.5))*-1)*0.916667,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,(cos(torad(age*25-22.5))*-1)*0.944444,(cos(torad(age*25-22.5))*-1)*0.888889,(cos(torad(age*25-22.5))*-1)*0.833333,(cos(torad(age*25-22.5))*-1)*0.777778,(cos(torad(age*25-22.5))*-1)*0.722222,(cos(torad(age*25-22.5))*-1)*0.666667,(cos(torad(age*25-22.5))*-1)*0.611111,(cos(torad(age*25-22.5))*-1)*0.555556,(cos(torad(age*25-22.5))*-1)*0.5,(cos(torad(age*25-22.5))*-1)*0.444444,(cos(torad(age*25-22.5))*-1)*0.388889,(cos(torad(age*25-22.5))*-1)*0.333333,(cos(torad(age*25-22.5))*-1)*0.277778,(cos(torad(age*25-22.5))*-1)*0.222222,(cos(torad(age*25-22.5))*-1)*0.166667,(cos(torad(age*25-22.5))*-1)*0.111111,(cos(torad(age*25-22.5))*-1)*0.055556,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))+(-sin(torad(age*2.25))*0.6))-(0))*(1-var.sheep_air_pose_blend)+(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_jump_blend+(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(0+(-1*(0)))*var.sheep_swim_blend)",
+     "front_left_leg.ty": "(((-11.5)+((((-11.5)+(-1*(keyframe(var.sheep_graze_t*40,0,0,0,0.25,0.5,1.125,1.75,2.375,3,3,3,1.5,0,-2.75,-5.5,-5.375,-5.25,-5.125,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5.125,-5.25,-5.375,-5.5,-5.5,-5.5,-5.5,-5.5,-5.125,-4.75,-4.375,-4,-3.375,-2.75,-2.125,-1.5,-1.25,-1,-0.75,-0.5,-0.375,-0.25,-0.125,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active))+((keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.083333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.25))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.416667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.583333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.75))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.916667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.944444))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.888889))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.777778))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.722222))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.611111))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.555556))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.444444))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.388889))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.277778))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.222222))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.111111))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.055556))/11.5,-0.999,0.999)))),0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))-(-11.5))*(1-var.sheep_air_pose_blend)+(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_jump_blend+(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,-0.375,-1.016667,-2.0175,-3.213333,-4.308333,-5,-5.166667,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2)))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(-11.5+(-1*(-3+sin(torad(var.sheep_swim_t*600))*-1.8)))*var.sheep_swim_blend)",
+     "front_right_leg.ry": "(((0)+(((0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,-0.40625,-0.8125,-1.21875,-1.625,-2.03125,-2.4375,-2.84375,-3.25,-2.4375,-1.625,-0.8125,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.375,-0.75,-1.125,-1.5,-1.35,-1.2,-1.05,-0.9,-0.75,-0.6,-0.45,-0.3,-0.15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))-(0))*(1-var.sheep_air_pose_blend)+(torad(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_jump_blend+(torad(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(torad(0+(0)))*var.sheep_swim_blend)",
+     "front_right_leg.rz": "((((0)+(((((0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,-6.125,-12.25,-18.375,-24.5,-30.625,-36.75,-42.875,-49,-49.25,-49.5,-49.75,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50,-50.5,-51,-51.5,-52,-46.8,-41.6,-36.4,-31.2,-26,-20.8,-15.6,-10.4,-5.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))+((keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.083333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.25))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.416667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.583333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.75))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.916667))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.944444))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.888889))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.777778))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.722222))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.611111))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.555556))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.444444))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.388889))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.277778))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.222222))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.111111))/11.5,-0.999,0.999)),asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.055556))/11.5,-0.999,0.999)),0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))+(torad(-sin(torad(age*2.25))*2.8)))-(0))*(1-var.sheep_air_pose_blend)+(torad(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_jump_blend+(torad(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_fall_blend)+(torad(-1*(if(var.sheep_turn_amount>0,(keyframe(var.sheep_turn_phase*24,-15,-12.5,-10,-7.5,-5,-2.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)),(keyframe(var.sheep_turn_phase*24,9,7.5,6,4.5,3,1.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_turn_blend))))*(1-var.sheep_swim_blend)+(torad(0+(-12+sin(torad(var.sheep_swim_t*600-45))*12)))*var.sheep_swim_blend)",
+     "front_right_leg.tx": "(((0)+(((((0)+(-1*(keyframe(var.sheep_graze_t*40,0,0.075,0.15,0.3125,0.475,0.6375,0.8,1.05,1.3,1.45,1.6,1.65,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.7,1.6,1.5,1.175,0.85,0.575,0.3,0.15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active))+(-1*(keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,(cos(torad(age*25-22.5))*-1)*0.083333,(cos(torad(age*25-22.5))*-1)*0.166667,(cos(torad(age*25-22.5))*-1)*0.25,(cos(torad(age*25-22.5))*-1)*0.333333,(cos(torad(age*25-22.5))*-1)*0.416667,(cos(torad(age*25-22.5))*-1)*0.5,(cos(torad(age*25-22.5))*-1)*0.583333,(cos(torad(age*25-22.5))*-1)*0.666667,(cos(torad(age*25-22.5))*-1)*0.75,(cos(torad(age*25-22.5))*-1)*0.833333,(cos(torad(age*25-22.5))*-1)*0.916667,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,cos(torad(age*25-22.5))*-1,(cos(torad(age*25-22.5))*-1)*0.944444,(cos(torad(age*25-22.5))*-1)*0.888889,(cos(torad(age*25-22.5))*-1)*0.833333,(cos(torad(age*25-22.5))*-1)*0.777778,(cos(torad(age*25-22.5))*-1)*0.722222,(cos(torad(age*25-22.5))*-1)*0.666667,(cos(torad(age*25-22.5))*-1)*0.611111,(cos(torad(age*25-22.5))*-1)*0.555556,(cos(torad(age*25-22.5))*-1)*0.5,(cos(torad(age*25-22.5))*-1)*0.444444,(cos(torad(age*25-22.5))*-1)*0.388889,(cos(torad(age*25-22.5))*-1)*0.333333,(cos(torad(age*25-22.5))*-1)*0.277778,(cos(torad(age*25-22.5))*-1)*0.222222,(cos(torad(age*25-22.5))*-1)*0.166667,(cos(torad(age*25-22.5))*-1)*0.111111,(cos(torad(age*25-22.5))*-1)*0.055556,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))+(-sin(torad(age*2.25))*0.6))-(0))*(1-var.sheep_air_pose_blend)+(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_jump_blend+(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(0+(-1*(0)))*var.sheep_swim_blend)",
+     "front_right_leg.ty": "(((-11.5)+((((-11.5)+(-1*(keyframe(var.sheep_graze_t*40,0,0.25,0.5,1.125,1.75,2.375,3,3,3,1.5,0,-2.75,-5.5,-5.375,-5.25,-5.125,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5,-5.25,-5.5,-5.5,-5.5,-4.75,-4,-2.75,-1.5,-1,-0.5,-0.375,-0.25,-0.125,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_graze_active))+((keyframe(var.sheep_random_kf,0,0,0,0,0,0,-0.2,-0.8,-1.2,-1.35,-1.5,-1.375,-0.9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.083333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.25))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.416667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.583333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.75))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.916667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-(cos(torad(age*25-22.5))*-1))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.944444))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.888889))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.833333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.777778))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.722222))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.666667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.611111))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.555556))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.5))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.444444))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.388889))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.333333))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.277778))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.222222))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.166667))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.111111))/11.5,-0.999,0.999)))),11.5*(1-cos(asin(clamp((-((cos(torad(age*25-22.5))*-1)*0.055556))/11.5,-0.999,0.999)))),0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))-(-11.5))*(1-var.sheep_air_pose_blend)+(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_jump_blend+(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,-0.375,-1.016667,-2.0175,-3.213333,-4.308333,-5,-5.166667,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2,-5.2)))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(-11.5+(-1*(-3+sin(torad(var.sheep_swim_t*600))*1.8)))*var.sheep_swim_blend)",
+     "ear_left.rx": "((((0)+((((0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.018281,-0.04875,-0.054844,0,0.131389,0.351111,0.5925,0.788889,0.873611,0.78,-0.84,-2.46,-2.46,-2.46,-0.84,0.78,1.885,2.99,2.13,1.27,-0.425,-2.12,-2.42,-2.72,-1.23,0.26,1.58,2.9,2.31,1.72,0,-1.72,-2.31,-2.9,-1.58,-0.26,1.23,2.72,2.42,2.12,0.425,-1.27,-2.13,-2.99,-1.885,-0.78,0.84,2.46,2.46,2.46,0.84,-0.78,-0.5925,0,0.045139,0.057778,0.04875,0.028889,0.009028,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))+(torad(-cos(torad(age*9-70))*2)))-(0))*(1-var.sheep_air_pose_blend)+(torad(1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_jump_blend+(torad(1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_fall_blend)+(torad(1*(keyframe(clamp(var.sheep_bounce_t/0.6667*16,0,16),0,-0.229642,-0.659329,-1.8,-2.973672,-4.626374,-6.456796,-8.163503,-9.445063,-10,-9.20187,-7.143392,-4.738281,-2.9,-1.514928,-0.596333,0)))*var.sheep_bounce_gate))*(1-var.sheep_swim_blend)+(torad(0+(15-sin(torad(var.sheep_swim_t*600 + 180 - 22.5))*5)))*var.sheep_swim_blend)",
+     "ear_right.rx": "((((0)+((((0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.018281,-0.04875,-0.054844,0,0.131389,0.351111,0.5925,0.788889,0.873611,0.78,-0.84,-2.46,-2.46,-2.46,-0.84,0.78,1.885,2.99,2.13,1.27,-0.425,-2.12,-2.42,-2.72,-1.23,0.26,1.58,2.9,2.31,1.72,0,-1.72,-2.31,-2.9,-1.58,-0.26,1.23,2.72,2.42,2.12,0.425,-1.27,-2.13,-2.99,-1.885,-0.78,0.84,2.46,2.46,2.46,0.84,-0.78,-0.5925,0,0.045139,0.057778,0.04875,0.028889,0.009028,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_graze_active))+(torad(-cos(torad(age*9-70))*2)))-(0))*(1-var.sheep_air_pose_blend)+(torad(1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_jump_blend+(torad(1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_fall_blend)+(torad(1*(keyframe(clamp(var.sheep_bounce_t/0.6667*16,0,16),0,-0.06667,-0.211138,-0.7,-1.315632,-2.158596,-3.073822,-3.906172,-4.5,-5.002605,-5.131059,-4.939324,-3.902913,-2.5,-1.578616,-0.650412,0)))*var.sheep_bounce_gate))*(1-var.sheep_swim_blend)+(torad(0+(15-sin(torad(var.sheep_swim_t*600 + 180 - 22.5))*5)))*var.sheep_swim_blend)",
+     "baby_head.rx": "(0)+(torad(1*(keyframe(var.sheep_graze_t*40,0,-0.165894,-0.37793,-0.629517,-0.914062,-1.224976,-1.555664,-1.899536,-2.25,-2.600464,-2.944336,-3.275024,-3.585938,-3.870483,-4.12207,-4.334106,-4.5,-4.540895,-4.580247,-4.618056,-4.654321,-4.689043,-4.722222,-4.753858,-4.783951,-4.8125,-4.839506,-4.864969,-4.888889,-4.911265,-4.932099,-4.951389,-4.969136,-4.98534,-5,-5.013117,-5.024691,-5.034722,-5.04321,-5.050154,-5.055556,-5.059414,-5.061728,-5.0625,-5.061728,-5.059414,-5.055556,-5.050154,-5.04321,-5.034722,-5.024691,-5.013117,-5,-4.98534,-4.969136,-4.951389,-4.932099,-4.911265,-4.888889,-4.864969,-4.839506,-4.8125,-4.783951,-4.753858,-4.722222,-4.689043,-4.654321,-4.618056,-4.580247,-4.540895,-4.5,-4.212,-3.816,-3.339,-2.808,-2.25,-1.692,-1.161,-0.684,-0.288,0,0.138575,0.236152,0.297649,0.327988,0.332088,0.314869,0.28125,0.236152,0.184493,0.131195,0.081177,0.039359,0.01066,0)))*var.sheep_graze_active)",
+     "baby_head.ty": "(0)+(-1*(keyframe(var.sheep_graze_t*40,0,0.027649,0.062988,0.104919,0.152344,0.204163,0.259277,0.316589,0.375,0.433411,0.490723,0.545837,0.597656,0.645081,0.687012,0.722351,0.75,0.756816,0.763374,0.769676,0.77572,0.781507,0.787037,0.79231,0.797325,0.802083,0.806584,0.810828,0.814815,0.818544,0.822016,0.825231,0.828189,0.83089,0.833333,0.83552,0.837449,0.83912,0.840535,0.841692,0.842593,0.843236,0.843621,0.84375,0.843621,0.843236,0.842593,0.841692,0.840535,0.83912,0.837449,0.83552,0.833333,0.83089,0.828189,0.825231,0.822016,0.818544,0.814815,0.810828,0.806584,0.802083,0.797325,0.79231,0.787037,0.781507,0.77572,0.769676,0.763374,0.756816,0.75,0.702,0.636,0.5565,0.468,0.375,0.282,0.1935,0.114,0.048,0,-0.023096,-0.039359,-0.049608,-0.054665,-0.055348,-0.052478,-0.046875,-0.039359,-0.030749,-0.021866,-0.01353,-0.00656,-0.001777,0))*var.sheep_graze_active)",
+     "baby_head.tz": "(0)+(1*(keyframe(var.sheep_graze_t*40,0,-0.055298,-0.125977,-0.209839,-0.304688,-0.408325,-0.518555,-0.633179,-0.75,-0.866821,-0.981445,-1.091675,-1.195312,-1.290161,-1.374023,-1.444702,-1.5,-1.513632,-1.526749,-1.539352,-1.55144,-1.563014,-1.574074,-1.584619,-1.59465,-1.604167,-1.613169,-1.621656,-1.62963,-1.637088,-1.644033,-1.650463,-1.656379,-1.66178,-1.666667,-1.671039,-1.674897,-1.678241,-1.68107,-1.683385,-1.685185,-1.686471,-1.687243,-1.6875,-1.687243,-1.686471,-1.685185,-1.683385,-1.68107,-1.678241,-1.674897,-1.671039,-1.666667,-1.66178,-1.656379,-1.650463,-1.644033,-1.637088,-1.62963,-1.621656,-1.613169,-1.604167,-1.59465,-1.584619,-1.574074,-1.563014,-1.55144,-1.539352,-1.526749,-1.513632,-1.5,-1.404,-1.272,-1.113,-0.936,-0.75,-0.564,-0.387,-0.228,-0.096,0,0.046192,0.078717,0.099216,0.109329,0.110696,0.104956,0.09375,0.078717,0.061498,0.043732,0.027059,0.01312,0.003553,0))*var.sheep_graze_active)",
+     "turn_pivot.ry": "(0)+(-torad(var.sheep_graze_yaw_offset))",
+     "var.sheep_random_kf": "if(var.sheep_random_state>1.5,var.sheep_random_sel*61+clamp(var.sheep_random_t*24,0,var.sheep_random_len*24),var.sheep_random_exit_sel*61+var.sheep_random_exit_frame)",
+     "alt_body.rx": "(((0)+((((0)+(torad(keyframe(var.sheep_random_kf,0,1.60064,3.2,2.5,-0.2,-3.898519,-7.6,-9.1,-9,-7,-4,-0.019853,3.96348,7.95,10.5,10.27,9.17005,7.1,6.75,6.890056,7.03,7.038755,7.047503,7.056252,7.065,7.073748,7.082497,7.091245,7.1,6.45026,5.8,4.333333,2.866667,1.4,0.69972,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))+(torad(cos(torad(age*9))*-1)))-(0))*(1-var.sheep_air_pose_blend)+(torad(1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,-29.891853,-45.210384,-49.314577,-48.164564,-41.094282,-33.546122,-26.891265,-21.978055,-18.402812,-14.989741,-13.270289,-11.550837,-9.831385,-8.897936,-8.181027,-7.464117,-7.034045,-6.917023,-6.8))))*var.sheep_jump_blend+(torad(1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,3.291667,9.97,19.4075,30.12,40.073333,46.99,51.498333,54.133333,55.125,55.25,55.25,55.25,55.25,55.25,55.25,55.25,55.25,55.25,55.25,55.25,55.25,55.25,55.25,55.25))))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(torad(0+(-10+cos(torad(var.sheep_swim_t*600))*4.85)))*var.sheep_swim_blend)",
+     "alt_body.ry": "(((0)+((((0)+(torad(keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,(cos(torad(age*25))*1.5)*0.083333,(cos(torad(age*25))*1.5)*0.166667,(cos(torad(age*25))*1.5)*0.25,(cos(torad(age*25))*1.5)*0.333333,(cos(torad(age*25))*1.5)*0.416667,(cos(torad(age*25))*1.5)*0.5,(cos(torad(age*25))*1.5)*0.583333,(cos(torad(age*25))*1.5)*0.666667,(cos(torad(age*25))*1.5)*0.75,(cos(torad(age*25))*1.5)*0.833333,(cos(torad(age*25))*1.5)*0.916667,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,cos(torad(age*25))*1.5,(cos(torad(age*25))*1.5)*0.958333,(cos(torad(age*25))*1.5)*0.916667,(cos(torad(age*25))*1.5)*0.875,(cos(torad(age*25))*1.5)*0.833333,(cos(torad(age*25))*1.5)*0.791667,(cos(torad(age*25))*1.5)*0.75,(cos(torad(age*25))*1.5)*0.708333,(cos(torad(age*25))*1.5)*0.666667,(cos(torad(age*25))*1.5)*0.625,(cos(torad(age*25))*1.5)*0.583333,(cos(torad(age*25))*1.5)*0.541667,(cos(torad(age*25))*1.5)*0.5,(cos(torad(age*25))*1.5)*0.458333,(cos(torad(age*25))*1.5)*0.416667,(cos(torad(age*25))*1.5)*0.375,(cos(torad(age*25))*1.5)*0.333333,(cos(torad(age*25))*1.5)*0.291667,(cos(torad(age*25))*1.5)*0.25,(cos(torad(age*25))*1.5)*0.208333,(cos(torad(age*25))*1.5)*0.166667,(cos(torad(age*25))*1.5)*0.125,(cos(torad(age*25))*1.5)*0.083333,(cos(torad(age*25))*1.5)*0.041667,0,0,0,0,0,0,0))*var.sheep_random_gate))+(torad(sin(torad(age*2.25))*2)))-(0))*(1-var.sheep_air_pose_blend)+(torad(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_jump_blend+(torad(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(torad(0+(0)))*var.sheep_swim_blend)",
+     "alt_body.rz": "((((0)+((((0)+(torad(keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,(sin(torad(age*25))*-5)*0.083333,(sin(torad(age*25))*-5)*0.166667,(sin(torad(age*25))*-5)*0.25,(sin(torad(age*25))*-5)*0.333333,(sin(torad(age*25))*-5)*0.416667,(sin(torad(age*25))*-5)*0.5,(sin(torad(age*25))*-5)*0.583333,(sin(torad(age*25))*-5)*0.666667,(sin(torad(age*25))*-5)*0.75,(sin(torad(age*25))*-5)*0.833333,(sin(torad(age*25))*-5)*0.916667,sin(torad(age*25))*-5,((sin(torad(age*25))*-5)*0.944444+(4.999471159635538)*0.055556),((sin(torad(age*25))*-5)*0.888889+(4.646737621134112)*0.111111),((sin(torad(age*25))*-5)*0.833333+(3.686386684050621)*0.166667),((sin(torad(age*25))*-5)*0.777778+(2.2439959010023123)*0.222222),((sin(torad(age*25))*-5)*0.722222+(0.508175390914007)*0.277778),((sin(torad(age*25))*-5)*0.666667+(-1.2940952255126013)*0.333333),((sin(torad(age*25))*-5)*0.611111+(-2.9271471688496997)*0.388889),((sin(torad(age*25))*-5)*0.555556+(-4.177439057064682)*0.444444),((sin(torad(age*25))*-5)*0.5+(-4.881480035599667)*0.5),((sin(torad(age*25))*-5)*0.444444+(-4.947208192904723)*0.555556),((sin(torad(age*25))*-5)*0.388889+(-4.366028773860978)*0.611111),((sin(torad(age*25))*-5)*0.333333+(-3.213938048432695)*0.666667),((sin(torad(age*25))*-5)*0.277778+(-1.6415858760678037)*0.722222),((sin(torad(age*25))*-5)*0.222222+(0.1454235937155491)*0.777778),((sin(torad(age*25))*-5)*0.166667+(1.9134171618254492)*0.833333),((sin(torad(age*25))*-5)*0.111111+(3.4312081893436677)*0.888889),((sin(torad(age*25))*-5)*0.055556+(4.500327059320605)*0.944444),4.980973,4.609868,3.676398,2.350686,0.842573,-0.63059,-1.875,-2.745897,-3.164142,-3.122026,-2.67813,-1.942731,-1.056546,-0.166508,0.597507,1.141428,1.418528,1.432343,1.23101,0.894439,0.516863,0.187941,-0.024227,-0.08529,0,0,0,0,0,0,0))*var.sheep_random_gate))+(torad(cos(torad(age*2.25))*3)))-(0))*(1-var.sheep_air_pose_blend)+(torad(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_jump_blend+(torad(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))))*var.sheep_fall_blend)+(torad(-1*(if(var.sheep_turn_amount>0,(keyframe(var.sheep_turn_phase*24,0,-2.329371,-4.5,-6.363961,-7.794229,-8.693332,-9,-8.693332,-7.794229,-6.363961,-4.5,-2.329371,0,2.135257,3.75,4.772971,5.196152,5.071111,4.5,3.622222,2.598076,1.59099,0.75,0.194114,0)),(keyframe(var.sheep_turn_phase*24,0,-2.329371,-4.5,-6.363961,-7.794229,-8.693332,-9,-8.693332,-7.794229,-6.363961,-4.5,-2.329371,0,2.135257,3.75,4.772971,5.196152,5.071111,4.5,3.622222,2.598076,1.59099,0.75,0.194114,0)))*var.sheep_turn_blend))))*(1-var.sheep_swim_blend)+(torad(0+(0)))*var.sheep_swim_blend)",
+     "alt_body.tx": "(((0)+((((0)+(-1*(keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,(cos(torad(age*25-45))*-1)*0.083333,(cos(torad(age*25-45))*-1)*0.166667,(cos(torad(age*25-45))*-1)*0.25,(cos(torad(age*25-45))*-1)*0.333333,(cos(torad(age*25-45))*-1)*0.416667,(cos(torad(age*25-45))*-1)*0.5,(cos(torad(age*25-45))*-1)*0.583333,(cos(torad(age*25-45))*-1)*0.666667,(cos(torad(age*25-45))*-1)*0.75,(cos(torad(age*25-45))*-1)*0.833333,(cos(torad(age*25-45))*-1)*0.916667,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,cos(torad(age*25-45))*-1,(cos(torad(age*25-45))*-1)*0.958333,(cos(torad(age*25-45))*-1)*0.916667,(cos(torad(age*25-45))*-1)*0.875,(cos(torad(age*25-45))*-1)*0.833333,(cos(torad(age*25-45))*-1)*0.791667,(cos(torad(age*25-45))*-1)*0.75,(cos(torad(age*25-45))*-1)*0.708333,(cos(torad(age*25-45))*-1)*0.666667,(cos(torad(age*25-45))*-1)*0.625,(cos(torad(age*25-45))*-1)*0.583333,(cos(torad(age*25-45))*-1)*0.541667,(cos(torad(age*25-45))*-1)*0.5,(cos(torad(age*25-45))*-1)*0.458333,(cos(torad(age*25-45))*-1)*0.416667,(cos(torad(age*25-45))*-1)*0.375,(cos(torad(age*25-45))*-1)*0.333333,(cos(torad(age*25-45))*-1)*0.291667,(cos(torad(age*25-45))*-1)*0.25,(cos(torad(age*25-45))*-1)*0.208333,(cos(torad(age*25-45))*-1)*0.166667,(cos(torad(age*25-45))*-1)*0.125,(cos(torad(age*25-45))*-1)*0.083333,(cos(torad(age*25-45))*-1)*0.041667,0,0,0,0,0,0,0))*var.sheep_random_gate))+(-sin(torad(age*2.25))*0.3))-(0))*(1-var.sheep_air_pose_blend)+(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_jump_blend+(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(0+(-1*(0)))*var.sheep_swim_blend)",
+     "alt_body.ty": "(((((-14.25)+((((-14.25)+(-1*(keyframe(var.sheep_random_kf,0,-0.35014,-0.7,-0.825,-0.95,-0.97499,-1,-0.7,-0.070252,0.56,0.9,1,0.9,0.8,0.42,-0.16366,-0.74732,-0.95,-0.91418,-0.760669,-0.60728,-0.53364,-0.46,-0.458335,-0.456668,-0.455001,-0.453335,-0.451668,-0.45,-0.42501,-0.4,-0.3,-0.2,-0.1,-0.04998,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0))*var.sheep_random_gate))+(-(cos(torad(age*9))*0.35-0.3)))-(-14.25))*(1-var.sheep_air_pose_blend)+(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,-0.877231,-1.611923,-1.939341,-2.021072,-2.044713,-1.923716,-1.762135,-1.537281,-1.312427,-1.087573,-0.862719,-0.637865,-0.463955,-0.322721,-0.191008,-0.122408,-0.053809,-0.01815,0)))*var.sheep_jump_blend+(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_fall_blend)+(-1*(keyframe(clamp(var.sheep_bounce_t/0.6667*16,0,16),0,0,-1.449565,-2.9,-3.76,-4,-3.9,-3.52,-2.79,-2.059671,-1.329343,-0.59946,-0.2,0,0,0,0))*var.sheep_bounce_gate))+(-1*(if(var.sheep_turn_amount>0,(keyframe(var.sheep_turn_phase*24,0,-0.15,-0.259808,-0.3,-0.259808,-0.15,0,0.15,0.259808,0.3,0.259808,0.15,0,-0.1375,-0.216506,-0.225,-0.173205,-0.0875,0,0.0625,0.086603,0.075,0.043301,0.0125,0)),(keyframe(var.sheep_turn_phase*24,0,-0.15,-0.259808,-0.3,-0.259808,-0.15,0,0.15,0.259808,0.3,0.259808,0.15,0,-0.1375,-0.216506,-0.225,-0.173205,-0.0875,0,0.0625,0.086603,0.075,0.043301,0.0125,0)))*var.sheep_turn_blend)))*(1-var.sheep_swim_blend)+(-14.25+(-1*(-5+sin(torad(var.sheep_swim_t*600))*0.5)))*var.sheep_swim_blend)",
+     "alt_head.tx": "(0)+(((0)+(-1*(keyframe(var.sheep_random_kf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,(sin(torad(age*25-45))*-0.5)*0.083333,(sin(torad(age*25-45))*-0.5)*0.166667,(sin(torad(age*25-45))*-0.5)*0.25,(sin(torad(age*25-45))*-0.5)*0.333333,(sin(torad(age*25-45))*-0.5)*0.416667,(sin(torad(age*25-45))*-0.5)*0.5,(sin(torad(age*25-45))*-0.5)*0.583333,(sin(torad(age*25-45))*-0.5)*0.666667,(sin(torad(age*25-45))*-0.5)*0.75,(sin(torad(age*25-45))*-0.5)*0.833333,(sin(torad(age*25-45))*-0.5)*0.916667,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,sin(torad(age*25-45))*-0.5,(sin(torad(age*25-45))*-0.5)*0.966667,(sin(torad(age*25-45))*-0.5)*0.933333,(sin(torad(age*25-45))*-0.5)*0.9,(sin(torad(age*25-45))*-0.5)*0.866667,(sin(torad(age*25-45))*-0.5)*0.833333,(sin(torad(age*25-45))*-0.5)*0.8,(sin(torad(age*25-45))*-0.5)*0.766667,(sin(torad(age*25-45))*-0.5)*0.733333,(sin(torad(age*25-45))*-0.5)*0.7,(sin(torad(age*25-45))*-0.5)*0.666667,(sin(torad(age*25-45))*-0.5)*0.633333,(sin(torad(age*25-45))*-0.5)*0.6,(sin(torad(age*25-45))*-0.5)*0.566667,(sin(torad(age*25-45))*-0.5)*0.533333,(sin(torad(age*25-45))*-0.5)*0.5,(sin(torad(age*25-45))*-0.5)*0.466667,(sin(torad(age*25-45))*-0.5)*0.433333,(sin(torad(age*25-45))*-0.5)*0.4,(sin(torad(age*25-45))*-0.5)*0.366667,(sin(torad(age*25-45))*-0.5)*0.333333,(sin(torad(age*25-45))*-0.5)*0.3,(sin(torad(age*25-45))*-0.5)*0.266667,(sin(torad(age*25-45))*-0.5)*0.233333,(sin(torad(age*25-45))*-0.5)*0.2,(sin(torad(age*25-45))*-0.5)*0.166667,(sin(torad(age*25-45))*-0.5)*0.133333,(sin(torad(age*25-45))*-0.5)*0.1,(sin(torad(age*25-45))*-0.5)*0.066667,(sin(torad(age*25-45))*-0.5)*0.033333,0))*var.sheep_random_gate))-(0))*(1-var.sheep_air_pose_blend)+(-1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_jump_blend+(-1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_fall_blend",
+     "alt_body.tz": "(((0)+((0)-(0))*(1-var.sheep_air_pose_blend)+(1*(keyframe(clamp(var.sheep_jump_t/0.7667*19,0,19),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_jump_blend+(1*(keyframe(clamp(var.sheep_fall_t/1*24,0,24),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_fall_blend)*(1-var.sheep_swim_blend)+(0+(1*(0)))*var.sheep_swim_blend)",
+     "back_left_leg_root.ty": "(0)+(-1*(if(var.sheep_turn_amount>0,(keyframe(var.sheep_turn_phase*24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.499733,0.999467,1.4992,1.000534,0.500267,0,0,0)),(keyframe(var.sheep_turn_phase*24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.499733,0.999467,1.4992,1.000534,0.500267,0,0,0)))*var.sheep_turn_blend))",
+     "back_right_leg_root.ty": "(0)+(-1*(if(var.sheep_turn_amount>0,(keyframe(var.sheep_turn_phase*24,0,0,0,0,0,0,0,0.499733,0.999467,1.4992,1.000534,0.500267,0,0,0,0,0,0,0,0,0,0,0,0,0)),(keyframe(var.sheep_turn_phase*24,0,0,0,0,0,0,0,0.499733,0.999467,1.4992,1.000534,0.500267,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_turn_blend))",
+     "front_left_leg_root.ty": "(0)+(-1*(if(var.sheep_turn_amount>0,(keyframe(var.sheep_turn_phase*24,0,0,0,0,0,0,0,0,0,0,0,0.499733,0.999467,1.4992,1.000534,0.500267,0,0,0,0,0,0,0,0,0)),(keyframe(var.sheep_turn_phase*24,0,0,0,0,0,0,0,0,0,0,0,0.499733,0.999467,1.4992,1.000534,0.500267,0,0,0,0,0,0,0,0,0)))*var.sheep_turn_blend))",
+     "front_right_leg_root.ty": "(0)+(-1*(if(var.sheep_turn_amount>0,(keyframe(var.sheep_turn_phase*24,0,0.59968,1.19936,1.799041,1.20064,0.60032,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)),(keyframe(var.sheep_turn_phase*24,0,0.59968,1.19936,1.799041,1.20064,0.60032,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)))*var.sheep_turn_blend))",
+     "var.sheep_blink_t": "if(varb.sheep_same_frame,var.sheep_blink_t,if(var.sheep_blink_t+frame_time>=1.83333,var.sheep_blink_t+frame_time-1.83333,var.sheep_blink_t+frame_time))",
+     "var.sheep_blink_closed": "if(var.sheep_blink_t>=1.6667,1,0)",
+     "blink.visible": "var.sheep_blink_closed>0.5",
+     "lead_anchor.tz": "(-8)+(1)",
+     "alt_head.sx": "1+(1)",
+     "alt_head.sy": "1+(1)",
+     "alt_head.sz": "1+(1)",
+     "alt_sheep.sx": "0.5",
+     "alt_sheep.sy": "0.5",
+     "alt_sheep.sz": "0.5",
+     "var.sheep_frame_prev": "frame_counter"
+    }
+   ]
+  },
+  {
+   "part": "root",
+   "id": "root",
+   "invertAxis": "xy"
+  },
+  {
+   "part": "head",
+   "id": "head",
+   "invertAxis": "xy"
+  },
+  {
+   "part": "leg1",
+   "id": "leg1",
+   "invertAxis": "xy"
+  },
+  {
+   "part": "leg2",
+   "id": "leg2",
+   "invertAxis": "xy"
+  },
+  {
+   "part": "leg3",
+   "id": "leg3",
+   "invertAxis": "xy"
+  },
+  {
+   "part": "leg4",
+   "id": "leg4",
+   "invertAxis": "xy"
+  }
+ ]
+}

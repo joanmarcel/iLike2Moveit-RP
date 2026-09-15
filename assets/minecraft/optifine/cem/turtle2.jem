@@ -1,0 +1,609 @@
+{
+ "credit": "Turtle (Bedrock preserve-mode) -> CEM/EMF. tools/build_turtle.py",
+ "texture": "turtle.png",
+ "textureSize": [
+  64,
+  64
+ ],
+ "models": [
+  {
+   "part": "body",
+   "id": "body",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    -9,
+    -12
+   ],
+   "animations": [
+    {
+     "var.turtle_baby_variant": "1",
+     "var.turtle_swim_active": "if(is_in_water&&!is_on_ground,1,if(is_on_ground,0,var.turtle_swim_active))",
+     "var.turtle_swim_t": "if(var.turtle_swim_active>0.5,var.turtle_swim_t+frame_time*if(var.turtle_baby_variant>0.5,1.5,1),0)",
+     "var.turtle_swim_idle_t": "if(var.turtle_swim_active>0.5,var.turtle_swim_idle_t+frame_time,0)",
+     "var.turtle_swim_warm": "clamp(var.turtle_swim_warm+if(var.turtle_swim_active>0.5,5,-5)*frame_time,0,1)",
+     "var.turtle_swim_smooth": "var.turtle_swim_warm*var.turtle_swim_warm*(3-2*var.turtle_swim_warm)",
+     "var.turtle_swim_move_weight": "clamp(limb_speed*if(var.turtle_baby_variant>0.5,5,2)*1,0,1)",
+     "varb.turtle_air_same": "frame_counter==var.turtle_air_frame",
+     "var.turtle_air_frame": "frame_counter",
+     "var.turtle_air_vy": "if(varb.turtle_air_same,var.turtle_air_vy,(pos_y-var.turtle_air_prev_y)*0.5+var.turtle_air_vy*0.5)",
+     "var.turtle_air_prev_y": "if(varb.turtle_air_same,var.turtle_air_prev_y,pos_y)",
+     "var.turtle_land_confirm_t": "if(varb.turtle_air_same,var.turtle_land_confirm_t,if(is_on_ground,min(var.turtle_land_confirm_t+frame_time,1),0))",
+     "var.turtle_landing_armed": "if(var.turtle_land_confirm_t>0.15,1,0)",
+     "var.turtle_jump_on": "if(varb.turtle_air_same,var.turtle_jump_on,if(var.turtle_jump_on>0.5,if(is_on_ground||is_in_water||var.turtle_air_vy<-0.0075,0,1),if(!is_on_ground&&!is_in_water&&var.turtle_air_vy>0.025,1,0)))",
+     "var.turtle_fall_on": "if(varb.turtle_air_same,var.turtle_fall_on,if(var.turtle_fall_on>0.5,if((is_on_ground&&var.turtle_landing_armed>0.5)||(var.turtle_air_vy>0.005&&var.turtle_fall_t>0.1)||is_in_water,0,1),if(!is_on_ground&&!is_in_water&&var.turtle_air_vy<-0.025,1,0)))",
+     "var.turtle_jump_warm": "if(varb.turtle_air_same,var.turtle_jump_warm,clamp(var.turtle_jump_warm+if(var.turtle_jump_on>0.5,4.166667,-4.166667)*frame_time,0,1))",
+     "var.turtle_fall_warm": "if(varb.turtle_air_same,var.turtle_fall_warm,clamp(var.turtle_fall_warm+if(var.turtle_fall_on>0.5,6.25,-6.25)*frame_time,0,1))",
+     "var.turtle_jump_t": "if(varb.turtle_air_same,var.turtle_jump_t,if(var.turtle_jump_on>0.5,var.turtle_jump_t+frame_time,if(var.turtle_jump_warm<0.01,0,var.turtle_jump_t)))",
+     "var.turtle_fall_t": "if(varb.turtle_air_same,var.turtle_fall_t,if(var.turtle_fall_on>0.5,var.turtle_fall_t+frame_time,if(var.turtle_fall_warm<0.01,0,var.turtle_fall_t)))",
+     "var.turtle_jump_f": "clamp(var.turtle_jump_t*30,0,23)",
+     "var.turtle_fall_f": "clamp(var.turtle_fall_t*30,0,20)",
+     "var.turtle_bounce_start": "if(varb.turtle_air_same,0,if(is_on_ground&&var.turtle_ground_anchor_sampled>0.5&&var.turtle_bounce_active<0.5&&var.turtle_land_confirm_t>0.15&&var.turtle_ground_anchor_y-pos_y>=0.75&&!is_in_water,1,0))",
+     "var.turtle_bounce_active": "if(varb.turtle_air_same,var.turtle_bounce_active,if(is_in_water,0,if(var.turtle_bounce_start>0.5,1,if(var.turtle_bounce_active>0.5&&var.turtle_bounce_t<0.625,1,0))))",
+     "var.turtle_bounce_t": "if(varb.turtle_air_same,var.turtle_bounce_t,if(var.turtle_bounce_start>0.5,0,if(var.turtle_bounce_active>0.5,min(var.turtle_bounce_t+frame_time,0.625),0)))",
+     "var.turtle_ground_anchor_y": "if(varb.turtle_air_same,var.turtle_ground_anchor_y,if(var.turtle_ground_anchor_sampled<0.5,pos_y,if(var.turtle_bounce_active>0.5,pos_y,if(is_on_ground&&pos_y>var.turtle_ground_anchor_y,pos_y,var.turtle_ground_anchor_y))))",
+     "var.turtle_ground_anchor_sampled": "1",
+     "var.turtle_bounce_warm": "if(varb.turtle_air_same,var.turtle_bounce_warm,clamp(var.turtle_bounce_warm+if(var.turtle_bounce_active>0.5,10,-10)*frame_time,0,1))",
+     "var.turtle_bounce_gate": "(var.turtle_bounce_warm*var.turtle_bounce_warm*(3-2*var.turtle_bounce_warm))*(1-var.turtle_swim_smooth)",
+     "var.turtle_blink_t": "if(varb.turtle_air_same,var.turtle_blink_t,if(var.turtle_blink_t+frame_time>=1.83333,var.turtle_blink_t+frame_time-1.83333,var.turtle_blink_t+frame_time))",
+     "var.turtle_blink_closed": "if(var.turtle_blink_t>=1.6667,1,0)",
+     "snout.sx": "1-var.turtle_blink_closed",
+     "blink.sx": "var.turtle_blink_closed",
+     "snout.sy": "1-var.turtle_blink_closed",
+     "blink.sy": "var.turtle_blink_closed",
+     "snout.sz": "1-var.turtle_blink_closed",
+     "blink.sz": "var.turtle_blink_closed",
+     "var.turtle_breathe_rate": "if(var.turtle_baby_variant>0.5,2,1)",
+     "var.turtle_breathe_weight": "4*var.turtle_breathe_rate*(1-var.turtle_swim_smooth)",
+     "shell_group.rx": "(((((torad(sin(torad(age*4.5*var.turtle_breathe_rate))*var.turtle_breathe_weight))+(torad(-cos((2*var.turtle_walk_phase))*5)*var.turtle_walk_gate))*(1-(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm)))+(torad(0+(keyframe(var.turtle_jump_f,0,-2.499688,-4.999375,-7.499063,-9.99875,-12.498438,-14.998125,-17.497813,-20,-20,-20,-20,-20,-20,-20,-20,-20,-20,-20,-20,-20,-20,-20,-20))))*(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm))))*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(torad(0+(keyframe(var.turtle_fall_f,0,2.421824,4.84607,10.024822,15.208758,20.392694,25.57663,31.47383,37.37103,43.26823,49.16543,55.06263,60.95983,64.170675,67.38152,70.592366,73.8,75.350775,76.9,78.449225,80))))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))",
+     "alt_head.rx": "(((((((torad(-cos(torad(age*4.5*var.turtle_breathe_rate))*2*var.turtle_breathe_weight))+(torad(-cos((2*var.turtle_walk_phase)-torad(45))*5)*var.turtle_walk_gate))*(1-var.turtle_swim_smooth)+(torad(sin(torad(var.turtle_swim_t*200))*20*var.turtle_swim_move_weight+cos(torad(var.turtle_swim_idle_t*120))*3))*var.turtle_swim_smooth))*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(torad(0+(keyframe(var.turtle_fall_f,0,-1.890525,-3.78294,-9.416515,-15.05009,-22.503723,-29.94991,-35.58067,-41.21706,-43.10853,-45,-43.107745,-41.21738,-35.587645,-29.95228,-22.50355,-15.05482,-9.417819,-3.78645,-1.894171,0))))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm))))+torad(keyframe(clamp(var.turtle_bounce_t*32,0,20),0,-3.375,-6.75,-10.125,-13.5,-10.4875,-7.475,1.875,11.225,14.7125,18.2,19.15625,20.1125,17.95625,15.8,11,6.2,3.6625,1.125,0.5625,0))*var.turtle_bounce_gate)+(torad(clamp(head_pitch,-45,45)))*(1-var.turtle_swim_smooth)+(torad((clamp(head_pitch,-45,45))-(clamp(todeg(body.rx)-90,-90,90))))*var.turtle_swim_smooth",
+     "alt_head.ry": "clamp(((torad(cos(torad(age*2.25*var.turtle_breathe_rate))*2*var.turtle_breathe_weight))+(torad(-sin(var.turtle_walk_phase-torad(45))*12)*var.turtle_walk_gate))+torad((clamp(head_yaw,-70,70))*(1-var.turtle_swim_smooth)+(-sin(torad((clamp(head_yaw,-70,70))*2))*60)*var.turtle_swim_smooth),torad(-70),torad(70))",
+     "alt_head.rz": "(((torad(-sin(torad(age*2.25*var.turtle_breathe_rate))*2*var.turtle_breathe_weight))+(torad(cos(var.turtle_walk_phase+torad(45))*8)*var.turtle_walk_gate))*(1-var.turtle_swim_smooth)+(torad(sin(torad(var.turtle_swim_idle_t*60))*4))*var.turtle_swim_smooth)",
+     "front_left_flipper.rz": "((torad(sin(torad(age*4.5*var.turtle_breathe_rate))*var.turtle_breathe_weight))+(torad(-10+cos(var.turtle_walk_phase)*10)*var.turtle_walk_gate))+torad(keyframe(clamp(var.turtle_bounce_t*32,0,20),0,-1.20037,-2.40074,-2.5,-2.20758,-1.06412,1.246297,3.56412,4.70758,5,4.84295,4.290075,3.7372,2.91284,2.088479,1.2628,0.71081,0.15705,0,0,0))*var.turtle_bounce_gate",
+     "front_right_flipper.rz": "((torad(-sin(torad(age*4.5*var.turtle_breathe_rate))*var.turtle_breathe_weight))+(torad(10+cos(var.turtle_walk_phase)*10)*var.turtle_walk_gate))+torad(keyframe(clamp(var.turtle_bounce_t*32,0,20),0,1.20037,2.40074,2.5,2.20758,1.06412,-1.246297,-3.56412,-4.70758,-5,-4.84295,-4.290075,-3.7372,-2.91284,-2.088479,-1.2628,-0.71081,-0.15705,0,0,0))*var.turtle_bounce_gate",
+     "var.turtle_walk_rate": "if(var.turtle_baby_variant>0.5,5,1)",
+     "var.turtle_walk_phase": "limb_swing*0.6662*var.turtle_walk_rate",
+     "var.turtle_walk_gate": "if(limb_speed>0.001,1,0)*(1-var.turtle_swim_smooth)",
+     "alt_root_motion.tz": "-sin((2*var.turtle_walk_phase))*2.5*var.turtle_walk_gate",
+     "shell_group.ry": "torad(sin(var.turtle_walk_phase)*12)*var.turtle_walk_gate",
+     "shell_group.rz": "torad(cos(var.turtle_walk_phase)*8)*var.turtle_walk_gate",
+     "front_left_leg.ry": "((torad(sin(var.turtle_walk_phase)*60)*var.turtle_walk_gate)*(1-var.turtle_swim_smooth)+(torad(sin(torad(var.turtle_swim_t*200)-torad(45))*35*var.turtle_swim_move_weight))*var.turtle_swim_smooth)",
+     "front_left_leg.tx": "(((((-5+(-cos((2*var.turtle_walk_phase))*2.7)*var.turtle_walk_gate)*(1-var.turtle_swim_smooth)+(-5+(2-sin(torad(var.turtle_swim_t*200)))*var.turtle_swim_move_weight)*var.turtle_swim_smooth))*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(-5+(keyframe(var.turtle_fall_f,0,0.045786,0.091573,0.137359,0.1831,0.308253,0.43328,0.558307,0.68346,0.841611,0.999921,1.15823,1.31654,1.441661,1.566783,1.691904,1.8169,1.862698,1.90845,1.954202,2)))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm))))+(-5)*var.turtle_baby_variant",
+     "front_left_leg.ty": "((((((-2.5+(2-max(cos(var.turtle_walk_phase)*4,0))*var.turtle_walk_gate)*(1-var.turtle_swim_smooth)+(-2.5+(-1-sin(torad(var.turtle_swim_t*200))*2)*var.turtle_swim_move_weight)*var.turtle_swim_smooth))*(1-(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm)))+(-2.5+(keyframe(var.turtle_jump_f,0,0,0,-0.305485,-0.61097,-1.500444,-2.38903,-2.694362,-3,-2.89817,-2.79634,-2.499852,-2.20366,-2.101881,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2)))*(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm))))*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(-2.5+(keyframe(var.turtle_fall_f,0,0.139292,0.278585,0.417877,0.55703,0.932295,1.307185,1.682075,2.05734,2.528316,2.999764,3.471212,3.94266,4.317831,4.693003,5.068174,5.44297,5.582297,5.721485,5.860673,6)))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))",
+     "front_left_leg.tz": "(((-4.5+(-1+sin(var.turtle_walk_phase)*2)*var.turtle_walk_gate)*(1-var.turtle_swim_smooth)+(-4.5-4*var.turtle_swim_move_weight)*var.turtle_swim_smooth))+(0.75)*var.turtle_baby_variant",
+     "front_right_leg.ry": "((torad(sin(var.turtle_walk_phase)*60)*var.turtle_walk_gate)*(1-var.turtle_swim_smooth)+(torad(-sin(torad(var.turtle_swim_t*200)-torad(45))*35*var.turtle_swim_move_weight))*var.turtle_swim_smooth)",
+     "front_right_leg.tx": "(((((5+(cos((2*var.turtle_walk_phase))*2.7)*var.turtle_walk_gate)*(1-var.turtle_swim_smooth)+(5+(-2+sin(torad(var.turtle_swim_t*200)))*var.turtle_swim_move_weight)*var.turtle_swim_smooth))*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(5+(keyframe(var.turtle_fall_f,0,-0.045786,-0.091573,-0.137359,-0.1831,-0.308253,-0.43328,-0.558307,-0.68346,-0.841611,-0.999921,-1.15823,-1.31654,-1.441661,-1.566783,-1.691904,-1.8169,-1.862698,-1.90845,-1.954202,-2)))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm))))+(5)*var.turtle_baby_variant",
+     "front_right_leg.ty": "((((((-2.5+(2-max(-cos(var.turtle_walk_phase)*4,0))*var.turtle_walk_gate)*(1-var.turtle_swim_smooth)+(-2.5+(-1-sin(torad(var.turtle_swim_t*200))*2)*var.turtle_swim_move_weight)*var.turtle_swim_smooth))*(1-(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm)))+(-2.5+(keyframe(var.turtle_jump_f,0,0,0,-0.305485,-0.61097,-1.500444,-2.38903,-2.694362,-3,-2.89817,-2.79634,-2.499852,-2.20366,-2.101881,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2)))*(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm))))*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(-2.5+(keyframe(var.turtle_fall_f,0,0.139292,0.278585,0.417877,0.55703,0.932295,1.307185,1.682075,2.05734,2.528316,2.999764,3.471212,3.94266,4.317831,4.693003,5.068174,5.44297,5.582297,5.721485,5.860673,6)))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))",
+     "front_right_leg.tz": "(((-4.5+(-1-sin(var.turtle_walk_phase)*2)*var.turtle_walk_gate)*(1-var.turtle_swim_smooth)+(-4.5-4*var.turtle_swim_move_weight)*var.turtle_swim_smooth))+(0.75)*var.turtle_baby_variant",
+     "back_right_leg.rx": "((((((((torad(-10+cos((2*var.turtle_walk_phase)-torad(45))*6)*var.turtle_walk_gate)*(1-var.turtle_swim_smooth)+(torad(-cos(torad(var.turtle_swim_t*200)-torad(22.5))*20*var.turtle_swim_move_weight+sin(torad(var.turtle_swim_idle_t*120)-torad(45))*6))*var.turtle_swim_smooth))*(1-(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm)))+(torad(0+(keyframe(var.turtle_jump_f,0,-5.624297,-11.248594,-16.872891,-22.497188,-28.121485,-33.745782,-39.370079,-45,-45,-45,-45,-45,-45,-45,-45,-45,-45,-45,-45,-45,-45,-45,-45))))*(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm))))*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(torad(0+(keyframe(var.turtle_fall_f,0,1.692826,3.385651,5.078477,6.76961,11.46497,16.15564,20.84631,25.54167,31.51635,37.49701,43.47767,49.45833,54.152519,58.846707,63.540896,68.23039,69.923638,71.615195,73.306752,75))))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm))))+torad(keyframe(clamp(var.turtle_bounce_t*32,0,20),0,3.375,6.75,10.125,13.5,10.4875,7.475,-1.875,-11.225,-14.7125,-18.2,-19.15625,-20.1125,-17.95625,-15.8,-11,-6.2,-3.6625,-1.125,-0.5625,0))*var.turtle_bounce_gate)+torad(-10)*var.turtle_baby_variant",
+     "back_right_leg.ry": "torad(3-sin(var.turtle_walk_phase)*8)*var.turtle_walk_gate",
+     "back_right_leg.tx": "(3.5+(sin(var.turtle_walk_phase)*2)*var.turtle_walk_gate)+(3)*var.turtle_baby_variant",
+     "back_right_leg.ty": "(((((-1.5+(-0.5+cos((2*var.turtle_walk_phase)-torad(45)))*var.turtle_walk_gate)*(1-(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm)))+(-1.5+(keyframe(var.turtle_jump_f,0,1.019796,2.039592,3.059388,4.079184,5.1,5.8,6.2,5.9,5.1,4.3,3.824763,3.35,3.066667,2.783333,2.5,2.437484,2.374969,2.312453,2.25,2.25,2.25,2.25,2.25)))*(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm))))*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(-1.5+(keyframe(var.turtle_fall_f,0,-0.344629,-0.689257,-1.033886,-1.37817,-2.112734,-2.846565,-3.580396,-4.31496,-5.156848,-5.999579,-6.842309,-7.68504,-8.419421,-9.153802,-9.888183,-10.62183,-10.966545,-11.310915,-11.655285,-12)))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm))))+(-3.25)*var.turtle_baby_variant",
+     "back_right_leg.tz": "(((9.5+(sin(var.turtle_walk_phase))*var.turtle_walk_gate)*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(9.5+(keyframe(var.turtle_fall_f,0,-0.17015,-0.3403,-0.51045,-0.68043,-1.048454,-1.41611,-1.783766,-2.15179,-2.575577,-2.999788,-3.423999,-3.84821,-4.216142,-4.584074,-4.952006,-5.31957,-5.489763,-5.659785,-5.829807,-6)))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm))))+(3.75)*var.turtle_baby_variant",
+     "back_left_leg.rx": "((((((((torad(-10+cos((2*var.turtle_walk_phase))*6)*var.turtle_walk_gate)*(1-var.turtle_swim_smooth)+(torad(-cos(torad(var.turtle_swim_t*200)-torad(22.5))*20*var.turtle_swim_move_weight+sin(torad(var.turtle_swim_idle_t*120)-torad(45))*6))*var.turtle_swim_smooth))*(1-(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm)))+(torad(0+(keyframe(var.turtle_jump_f,0,-5.624297,-11.248594,-16.872891,-22.497188,-28.121485,-33.745782,-39.370079,-45,-45,-45,-45,-45,-45,-45,-45,-45,-45,-45,-45,-45,-45,-45,-45))))*(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm))))*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(torad(0+(keyframe(var.turtle_fall_f,0,1.692826,3.385651,5.078477,6.76961,11.46497,16.15564,20.84631,25.54167,31.51635,37.49701,43.47767,49.45833,54.152519,58.846707,63.540896,68.23039,69.923638,71.615195,73.306752,75))))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm))))+torad(keyframe(clamp(var.turtle_bounce_t*32,0,20),0,3.375,6.75,10.125,13.5,10.4875,7.475,-1.875,-11.225,-14.7125,-18.2,-19.15625,-20.1125,-17.95625,-15.8,-11,-6.2,-3.6625,-1.125,-0.5625,0))*var.turtle_bounce_gate)+torad(-10)*var.turtle_baby_variant",
+     "back_left_leg.ry": "torad(-3-sin(var.turtle_walk_phase)*8)*var.turtle_walk_gate",
+     "back_left_leg.tx": "(-3.5+(sin(var.turtle_walk_phase)*2)*var.turtle_walk_gate)+(-3)*var.turtle_baby_variant",
+     "back_left_leg.ty": "(((((-1.5+(-0.5+cos((2*var.turtle_walk_phase)))*var.turtle_walk_gate)*(1-(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm)))+(-1.5+(keyframe(var.turtle_jump_f,0,1.019796,2.039592,3.059388,4.079184,5.1,5.8,6.2,5.9,5.1,4.3,3.824763,3.35,3.066667,2.783333,2.5,2.437484,2.374969,2.312453,2.25,2.25,2.25,2.25,2.25)))*(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm))))*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(-1.5+(keyframe(var.turtle_fall_f,0,-0.344629,-0.689257,-1.033886,-1.37817,-2.112734,-2.846565,-3.580396,-4.31496,-5.156848,-5.999579,-6.842309,-7.68504,-8.419421,-9.153802,-9.888183,-10.62183,-10.966545,-11.310915,-11.655285,-12)))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm))))+(-3.25)*var.turtle_baby_variant",
+     "back_left_leg.tz": "(((9.5+(-sin(var.turtle_walk_phase))*var.turtle_walk_gate)*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(9.5+(keyframe(var.turtle_fall_f,0,-0.17015,-0.3403,-0.51045,-0.68043,-1.048454,-1.41611,-1.783766,-2.15179,-2.575577,-2.999788,-3.423999,-3.84821,-4.216142,-4.584074,-4.952006,-5.31957,-5.489763,-5.659785,-5.829807,-6)))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm))))+(3.75)*var.turtle_baby_variant",
+     "shell_group.ty": "(-2.75+(-0.5+sin((2*var.turtle_walk_phase))*0.4)*var.turtle_walk_gate)+(-2)*var.turtle_baby_variant",
+     "alt_root_motion.rx": "((0)*(1-var.turtle_swim_smooth)+(torad(-cos(torad(var.turtle_swim_t*200))*10*var.turtle_swim_move_weight+sin(torad(var.turtle_swim_idle_t*120))*3))*var.turtle_swim_smooth)",
+     "alt_root_motion.rz": "((0)*(1-var.turtle_swim_smooth)+(torad(cos(torad(var.turtle_swim_idle_t*60))*4))*var.turtle_swim_smooth)",
+     "alt_root_motion.ty": "((((0)*(1-var.turtle_swim_smooth)+(-(sin(torad(var.turtle_swim_t*200))*2.5*var.turtle_swim_move_weight+cos(torad(var.turtle_swim_idle_t*120))*0.4))*var.turtle_swim_smooth))*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(0+(keyframe(var.turtle_fall_f,0,0.064028,0.12812,0.32358,0.51904,0.89487,1.270325,1.64578,2.02161,2.510438,2.999755,3.489073,3.97839,4.354126,4.729863,5.105599,5.48096,5.676518,5.87188,5.935908,6)))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))",
+     "front_left_leg.rx": "((0)*(1-var.turtle_swim_smooth)+(torad(-sin(torad(var.turtle_swim_t*200))*20*var.turtle_swim_move_weight+sin(torad(var.turtle_swim_idle_t*60))*8))*var.turtle_swim_smooth)",
+     "front_left_leg.rz": "((((((0)*(1-var.turtle_swim_smooth)+(torad(-cos(torad(var.turtle_swim_t*200))*45*var.turtle_swim_move_weight+cos(torad(var.turtle_swim_idle_t*60))*5))*var.turtle_swim_smooth))*(1-(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm)))+(torad(0+(keyframe(var.turtle_jump_f,0,-18.808301,-37.63541,-43.339,-45,-44.17302,-41.14834,-38.12366,-33.747814,-29.37634,-26.353172,-23.32698,-22.5,-22.5,-22.5,-22.5,-22.5,-22.5,-22.5,-22.5,-22.5,-22.5,-22.5,-22.5))))*(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm))))*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(torad(0+(keyframe(var.turtle_fall_f,0,-1.602503,-3.205006,-4.807509,-6.40841,-10.788788,-15.16479,-19.540792,-23.92117,-29.456429,-34.99723,-40.53803,-46.07883,-50.458115,-54.8374,-59.216684,-63.59159,-65.194493,-66.795795,-68.397097,-70))))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))",
+     "front_right_leg.rx": "((0)*(1-var.turtle_swim_smooth)+(torad(-sin(torad(var.turtle_swim_t*200))*20*var.turtle_swim_move_weight+sin(torad(var.turtle_swim_idle_t*60))*8))*var.turtle_swim_smooth)",
+     "front_right_leg.rz": "((((((0)*(1-var.turtle_swim_smooth)+(torad(cos(torad(var.turtle_swim_t*200))*45*var.turtle_swim_move_weight-cos(torad(var.turtle_swim_idle_t*60))*5))*var.turtle_swim_smooth))*(1-(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm)))+(torad(0+(keyframe(var.turtle_jump_f,0,18.808301,37.63541,43.339,45,44.17302,41.14834,38.12366,33.747814,29.37634,26.353172,23.32698,22.5,22.5,22.5,22.5,22.5,22.5,22.5,22.5,22.5,22.5,22.5,22.5))))*(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm))))*(1-(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))+(torad(0+(keyframe(var.turtle_fall_f,0,1.602503,3.205006,4.807509,6.40841,10.788788,15.16479,19.540792,23.92117,29.456429,34.99723,40.53803,46.07883,50.458115,54.8374,59.216684,63.59159,65.194493,66.795795,68.397097,70))))*(var.turtle_fall_warm*var.turtle_fall_warm*(3-2*var.turtle_fall_warm)))",
+     "back_left_leg.rz": "((0)*(1-var.turtle_swim_smooth)+(torad(sin(torad(var.turtle_swim_idle_t*60))*6))*var.turtle_swim_smooth)",
+     "back_right_leg.rz": "((0)*(1-var.turtle_swim_smooth)+(torad(-sin(torad(var.turtle_swim_idle_t*60))*6))*var.turtle_swim_smooth)",
+     "shell.rx": "((0)*(1-(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm)))+(torad(0+(keyframe(var.turtle_jump_f,0,-21.364318,-42.75,-48.6,-49.73,-47.87,-41.435,-35,-29.497251,-24,-21.046667,-18.093333,-15.14,-13.719645,-12.29929,-10.878935,-9.46,-8.867204,-8.275,-7.682796,-7.09,-6.99343,-6.896763,-6.8))))*(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm)))",
+     "shell.ty": "((0)*(1-(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm)))+(0+(keyframe(var.turtle_jump_f,0,0.724638,1.45,1.725,2,2.025012,2.05,1.95005,1.85,1.664445,1.478704,1.292963,1.107222,0.921482,0.735741,0.55,0.433333,0.316667,0.2,0.143333,0.086667,0.03,0.015007,0)))*(var.turtle_jump_warm*var.turtle_jump_warm*(3-2*var.turtle_jump_warm)))",
+     "alt_head.ty": "(-0.75)+(keyframe(clamp(var.turtle_bounce_t*32,0,20),0,0.15,0.3,0.675,1.05,1.325,1.6,1.675,1.75,1.7,1.65,1.425,1.2,0.8625,0.525,0.3375,0.15,0.075,0,0,0))*var.turtle_bounce_gate",
+     "alt_turtle.sx": "((1)*(1+(keyframe(clamp(var.turtle_bounce_t*32,0,20),0,0,0,0.002395,0.00479,0.0125,0.02021,0.022605,0.025,0.023655,0.02231,0.01904,0.01577,0.0125,0.00923,0.00596,0.00269,0.001345,0,0,0))*var.turtle_bounce_gate))*0.5",
+     "alt_turtle.sy": "((1)*(1+(keyframe(clamp(var.turtle_bounce_t*32,0,20),0,0,0,-0.004785,-0.00957,-0.025,-0.04043,-0.045215,-0.05,-0.047305,-0.04461,-0.038073,-0.031537,-0.025,-0.018463,-0.011927,-0.00539,-0.002695,0,0,0))*var.turtle_bounce_gate))*0.5",
+     "alt_turtle.sz": "((1)*(1+(keyframe(clamp(var.turtle_bounce_t*32,0,20),0,0,0,0.002395,0.00479,0.0125,0.02021,0.022605,0.025,0.023655,0.02231,0.01904,0.01577,0.0125,0.00923,0.00596,0.00269,0.001345,0,0,0))*var.turtle_bounce_gate))*0.5",
+     "shell_group.tz": "(0)+(-0.3)*var.turtle_baby_variant",
+     "shell_group.sx": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "shell_group.sy": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "shell_group.sz": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "alt_head.tz": "(-8.5)+(7)*var.turtle_baby_variant",
+     "alt_head.sx": "(1)*(1+(-0.167)*var.turtle_baby_variant)",
+     "alt_head.sy": "(1)*(1+(-0.167)*var.turtle_baby_variant)",
+     "alt_head.sz": "(1)*(1+(-0.167)*var.turtle_baby_variant)",
+     "front_left_leg.sx": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "front_left_leg.sy": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "front_left_leg.sz": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "front_right_leg.sx": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "front_right_leg.sy": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "front_right_leg.sz": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "back_left_leg.sx": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "back_left_leg.sy": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "back_left_leg.sz": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "back_right_leg.sx": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "back_right_leg.sy": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "back_right_leg.sz": "(1)*(1+(5.66)*var.turtle_baby_variant)",
+     "alt_root_motion.sx": "(1)*0.333",
+     "alt_root_motion.sy": "(1)*0.333",
+     "alt_root_motion.sz": "(1)*0.333",
+     "snout.tz": "-2.5+(min(abs((clamp(head_yaw,-70,70))/45),1))*var.turtle_swim_smooth"
+    }
+   ],
+   "submodels": [
+    {
+     "id": "alt_turtle",
+     "invertAxis": "xy",
+     "translate": [
+      0,
+      0,
+      0
+     ],
+     "rotate": [
+      90,
+      0,
+      0
+     ],
+     "submodels": [
+      {
+       "id": "alt_root_motion",
+       "invertAxis": "xy",
+       "translate": [
+        0,
+        0,
+        0
+       ],
+       "submodels": [
+        {
+         "id": "shell_group",
+         "invertAxis": "xy",
+         "translate": [
+          0,
+          2.75,
+          0
+         ],
+         "submodels": [
+          {
+           "id": "shell",
+           "invertAxis": "xy",
+           "translate": [
+            0,
+            0,
+            0
+           ],
+           "boxes": [
+            {
+             "textureOffset": [
+              52,
+              43
+             ],
+             "coordinates": [
+              -1.5,
+              -1,
+              -1.5,
+              3,
+              1,
+              3.5
+             ]
+            },
+            {
+             "textureOffset": [
+              46,
+              37
+             ],
+             "coordinates": [
+              -2,
+              0,
+              -1.5,
+              4,
+              1,
+              4
+             ]
+            }
+           ]
+          },
+          {
+           "id": "alt_head",
+           "invertAxis": "xy",
+           "translate": [
+            0,
+            0.75,
+            -8.5
+           ],
+           "boxes": [
+            {
+             "textureOffset": [
+              18,
+              12
+             ],
+             "coordinates": [
+              -1.5,
+              -1.5,
+              -3,
+              3,
+              3,
+              3
+             ]
+            },
+            {
+             "textureOffset": [
+              0,
+              2
+             ],
+             "coordinates": [
+              -1.475,
+              -1,
+              -3,
+              0,
+              2,
+              2.5
+             ]
+            },
+            {
+             "textureOffset": [
+              0,
+              2
+             ],
+             "coordinates": [
+              1.475,
+              -1,
+              -3,
+              0,
+              2,
+              2.5
+             ],
+             "mirror": true
+            }
+           ],
+           "submodels": [
+            {
+             "id": "snout",
+             "invertAxis": "xy",
+             "translate": [
+              0,
+              0,
+              -2.5
+             ],
+             "boxes": [
+              {
+               "coordinates": [
+                -1.51,
+                -0.525,
+                -0.5,
+                0.1,
+                1.05,
+                1.025
+               ],
+               "uvEast": [
+                0,
+                3,
+                1,
+                4
+               ],
+               "uvWest": [
+                0,
+                3,
+                1,
+                4
+               ]
+              },
+              {
+               "coordinates": [
+                1.51,
+                -0.525,
+                -0.5,
+                0.1,
+                1.05,
+                1.025
+               ],
+               "uvEast": [
+                0,
+                3,
+                1,
+                4
+               ],
+               "uvWest": [
+                0,
+                3,
+                1,
+                4
+               ]
+              }
+             ]
+            },
+            {
+             "id": "blink",
+             "invertAxis": "xy",
+             "translate": [
+              0,
+              0,
+              0
+             ],
+             "boxes": [
+              {
+               "coordinates": [
+                -1.54,
+                -0.525,
+                -3.01,
+                0.2,
+                1.05,
+                2.025
+               ],
+               "uvNorth": [
+                4,
+                2,
+                5,
+                3
+               ],
+               "uvEast": [
+                4,
+                2,
+                6,
+                3
+               ],
+               "uvSouth": [
+                5,
+                2,
+                6,
+                3
+               ],
+               "uvWest": [
+                4,
+                2,
+                6,
+                3
+               ],
+               "uvUp": [
+                8,
+                0,
+                9,
+                2
+               ],
+               "uvDown": [
+                9,
+                2,
+                8,
+                0
+               ]
+              },
+              {
+               "coordinates": [
+                1.34,
+                -0.525,
+                -3.01,
+                0.2,
+                1.05,
+                2.025
+               ],
+               "uvNorth": [
+                5,
+                2,
+                6,
+                3
+               ],
+               "uvEast": [
+                4,
+                2,
+                6,
+                3
+               ],
+               "uvSouth": [
+                4,
+                2,
+                5,
+                3
+               ],
+               "uvWest": [
+                4,
+                2,
+                6,
+                3
+               ],
+               "uvUp": [
+                8,
+                2,
+                9,
+                0
+               ],
+               "uvDown": [
+                8,
+                0,
+                9,
+                2
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "front_left_leg",
+         "invertAxis": "xy",
+         "translate": [
+          5,
+          2.5,
+          -4.5
+         ],
+         "submodels": [
+          {
+           "id": "front_left_flipper",
+           "invertAxis": "xy",
+           "translate": [
+            3,
+            0,
+            0
+           ],
+           "boxes": [
+            {
+             "textureOffset": [
+              0,
+              23
+             ],
+             "coordinates": [
+              -3.25,
+              -0.5,
+              -1,
+              3.5,
+              1,
+              2
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "front_right_leg",
+         "invertAxis": "xy",
+         "translate": [
+          -5,
+          2.5,
+          -4.5
+         ],
+         "submodels": [
+          {
+           "id": "front_right_flipper",
+           "invertAxis": "xy",
+           "translate": [
+            -3,
+            0,
+            0
+           ],
+           "boxes": [
+            {
+             "textureOffset": [
+              0,
+              23
+             ],
+             "coordinates": [
+              -0.25,
+              -0.5,
+              -1,
+              3.5,
+              1,
+              2
+             ],
+             "mirror": true
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "back_left_leg",
+         "invertAxis": "xy",
+         "translate": [
+          3.5,
+          1.5,
+          9.5
+         ],
+         "boxes": [
+          {
+           "textureOffset": [
+            0,
+            28
+           ],
+           "coordinates": [
+            -1,
+            -0.5,
+            -0.25,
+            2,
+            1,
+            3.5
+           ]
+          }
+         ]
+        },
+        {
+         "id": "back_right_leg",
+         "invertAxis": "xy",
+         "translate": [
+          -3.5,
+          1.5,
+          9.5
+         ],
+         "boxes": [
+          {
+           "textureOffset": [
+            0,
+            28
+           ],
+           "coordinates": [
+            -1,
+            -0.5,
+            -0.25,
+            2,
+            1,
+            3.5
+           ],
+           "mirror": true
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "part": "head",
+   "id": "head",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "part": "body2",
+   "id": "body2",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "part": "leg1",
+   "id": "leg1",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "part": "leg2",
+   "id": "leg2",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "part": "leg3",
+   "id": "leg3",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "part": "leg4",
+   "id": "leg4",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    0,
+    0
+   ]
+  }
+ ]
+}

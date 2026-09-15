@@ -1,0 +1,383 @@
+{
+ "credit": "Dolphin (Bedrock preserve-mode) -> CEM/EMF. tools/build_dolphin.py",
+ "textureSize": [
+  64,
+  64
+ ],
+ "models": [
+  {
+   "part": "body",
+   "id": "body",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    -4,
+    0
+   ],
+   "submodels": [
+    {
+     "id": "alt_dolphin",
+     "invertAxis": "xy",
+     "translate": [
+      0,
+      0,
+      0
+     ],
+     "rotate": [
+      0,
+      0,
+      0
+     ],
+     "submodels": [
+      {
+       "id": "alt_body",
+       "invertAxis": "xy",
+       "translate": [
+        0,
+        3,
+        0
+       ],
+       "boxes": [
+        {
+         "coordinates": [
+          -4,
+          -3,
+          -6,
+          8,
+          7,
+          13
+         ],
+         "textureOffset": [
+          0,
+          13
+         ]
+        }
+       ],
+       "submodels": [
+        {
+         "id": "alt_head",
+         "invertAxis": "xy",
+         "translate": [
+          0,
+          0.5,
+          -6
+         ],
+         "submodels": [
+          {
+           "id": "nose",
+           "invertAxis": "xy",
+           "translate": [
+            0,
+            -2.5,
+            -6
+           ],
+           "boxes": [
+            {
+             "coordinates": [
+              -1,
+              -1,
+              -4,
+              2,
+              2,
+              4
+             ],
+             "textureOffset": [
+              0,
+              13
+             ]
+            }
+           ]
+          },
+          {
+           "id": "face",
+           "invertAxis": "xy",
+           "translate": [
+            0,
+            0,
+            0
+           ],
+           "boxes": [
+            {
+             "coordinates": [
+              -4,
+              -3.5,
+              -6,
+              8,
+              7,
+              6
+             ],
+             "textureOffset": [
+              0,
+              0
+             ]
+            }
+           ]
+          },
+          {
+           "id": "blink",
+           "invertAxis": "xy",
+           "translate": [
+            0,
+            0,
+            0
+           ],
+           "boxes": [
+            {
+             "coordinates": [
+              -4,
+              -3.5,
+              -6,
+              8,
+              7,
+              6
+             ],
+             "textureOffset": [
+              30,
+              12
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "alt_tail",
+         "invertAxis": "xy",
+         "translate": [
+          0,
+          0.5,
+          7
+         ],
+         "boxes": [
+          {
+           "coordinates": [
+            -2,
+            -2.5,
+            0,
+            4,
+            5,
+            11
+           ],
+           "textureOffset": [
+            0,
+            33
+           ]
+          }
+         ],
+         "submodels": [
+          {
+           "id": "alt_tail_fin",
+           "invertAxis": "xy",
+           "translate": [
+            0,
+            0,
+            10
+           ],
+           "boxes": [
+            {
+             "coordinates": [
+              -5,
+              -0.5,
+              -1,
+              10,
+              1,
+              6
+             ],
+             "textureOffset": [
+              0,
+              49
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "alt_back_fin",
+         "invertAxis": "xy",
+         "translate": [
+          0,
+          4,
+          -1
+         ],
+         "rotate": [
+          30,
+          0,
+          0
+         ],
+         "boxes": [
+          {
+           "coordinates": [
+            -0.5,
+            -0.75,
+            -1,
+            1,
+            5,
+            4
+           ],
+           "textureOffset": [
+            29,
+            0
+           ]
+          }
+         ]
+        },
+        {
+         "id": "alt_left_fin",
+         "invertAxis": "xy",
+         "translate": [
+          -3,
+          -2,
+          -4
+         ],
+         "rotate": [
+          0,
+          25,
+          20
+         ],
+         "boxes": [
+          {
+           "coordinates": [
+            -8,
+            0,
+            -1.5,
+            8,
+            1,
+            4
+           ],
+           "textureOffset": [
+            40,
+            0
+           ]
+          }
+         ]
+        },
+        {
+         "id": "alt_right_fin",
+         "invertAxis": "xy",
+         "translate": [
+          3,
+          -2,
+          -4
+         ],
+         "rotate": [
+          0,
+          -25,
+          -20
+         ],
+         "boxes": [
+          {
+           "coordinates": [
+            0,
+            0,
+            -1.5,
+            8,
+            1,
+            4
+           ],
+           "textureOffset": [
+            40,
+            6
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "animations": [
+    {
+     "var.dolphin_beached": "if(is_in_water,0,1)",
+     "var.dolphin_swim_t": "if(var.dolphin_beached<0.5,var.dolphin_swim_t+frame_time,0)",
+     "var.dolphin_swim_warm": "clamp(var.dolphin_swim_warm+if(var.dolphin_beached<0.5,5,-5)*frame_time,0,1)",
+     "var.dolphin_beach_t": "if(var.dolphin_beached>0.5,var.dolphin_beach_t+frame_time,0)",
+     "var.dolphin_beach_warm": "clamp(var.dolphin_beach_warm+if(var.dolphin_beached>0.5,5,-5)*frame_time,0,1)",
+     "var.dolphin_blink": "if((age+random(id)*34)-floor((age+random(id)*34)/34)*34<3,1,0)",
+     "alt_body.rx": "torad(-cos(torad(var.dolphin_swim_t*300))*6)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))+torad(sin(torad(var.dolphin_swim_t*120))*2.5)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))",
+     "alt_head.rx": "torad(sin(torad(var.dolphin_swim_t*300))*10)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))+torad(clamp(head_pitch*0.35,-15,15))*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))",
+     "alt_left_fin.ry": "torad(-25)+torad(-cos(torad(var.dolphin_swim_t*300))*12)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))",
+     "alt_left_fin.rz": "torad(20)+torad(cos(torad(var.dolphin_swim_t*300))*12)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))+torad(-sin(torad(var.dolphin_swim_t*120))*5)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))+torad(sin(torad(var.dolphin_beach_t*300-45))*90)*(var.dolphin_beach_warm*var.dolphin_beach_warm*(3-2*var.dolphin_beach_warm))",
+     "alt_right_fin.ry": "torad(25)+torad(cos(torad(var.dolphin_swim_t*300))*12)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))",
+     "alt_right_fin.rz": "torad(-20)+torad(-cos(torad(var.dolphin_swim_t*300))*12)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))+torad(sin(torad(var.dolphin_swim_t*120))*5)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))+torad(sin(torad(var.dolphin_beach_t*300-45))*90)*(var.dolphin_beach_warm*var.dolphin_beach_warm*(3-2*var.dolphin_beach_warm))",
+     "alt_tail.rx": "torad(-cos(torad(var.dolphin_swim_t*300))*6)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))+torad(sin(torad(var.dolphin_swim_t*120))*2.5)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))+torad(-cos(torad(var.dolphin_beach_t*600-45))*30)*(var.dolphin_beach_warm*var.dolphin_beach_warm*(3-2*var.dolphin_beach_warm))",
+     "alt_tail_fin.rx": "torad(-cos(torad(var.dolphin_swim_t*300-45))*12)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))+torad(sin(torad(var.dolphin_swim_t*120-45))*5)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))+torad(-sin(torad(var.dolphin_beach_t*600))*30)*(var.dolphin_beach_warm*var.dolphin_beach_warm*(3-2*var.dolphin_beach_warm))",
+     "alt_body.rz": "torad(cos(torad(var.dolphin_swim_t*60))*4)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))+torad(sin(torad(var.dolphin_beach_t*300))*90)*(var.dolphin_beach_warm*var.dolphin_beach_warm*(3-2*var.dolphin_beach_warm))",
+     "alt_tail.ry": "torad(cos(torad(var.dolphin_swim_t*60))*3)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))",
+     "alt_tail.rz": "torad(-sin(torad(var.dolphin_swim_t*60))*3)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))",
+     "alt_head.ry": "torad(clamp(head_yaw*0.35,-25,25))*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))",
+     "alt_back_fin.rz": "torad(sin(torad(var.dolphin_beach_t*300-45))*60)*(var.dolphin_beach_warm*var.dolphin_beach_warm*(3-2*var.dolphin_beach_warm))",
+     "alt_tail_fin.rz": "torad(sin(torad(var.dolphin_beach_t*300-45))*30)*(var.dolphin_beach_warm*var.dolphin_beach_warm*(3-2*var.dolphin_beach_warm))",
+     "alt_body.ty": "-3+-1*((sin(torad(var.dolphin_swim_t*300+22.5))*1)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))+(cos(torad(var.dolphin_swim_t*120))*0.4)*(var.dolphin_swim_warm*var.dolphin_swim_warm*(3-2*var.dolphin_swim_warm))+(-2)*(var.dolphin_beach_warm*var.dolphin_beach_warm*(3-2*var.dolphin_beach_warm)))",
+     "face.sx": "1-var.dolphin_blink",
+     "blink.sx": "1.01*var.dolphin_blink",
+     "face.sy": "1-var.dolphin_blink",
+     "blink.sy": "1.01*var.dolphin_blink",
+     "face.sz": "1-var.dolphin_blink",
+     "blink.sz": "1.01*var.dolphin_blink"
+    }
+   ]
+  },
+  {
+   "part": "head",
+   "id": "head",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "part": "tail",
+   "id": "tail",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "part": "tail_fin",
+   "id": "tail_fin",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "part": "back_fin",
+   "id": "back_fin",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "part": "left_fin",
+   "id": "left_fin",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "part": "right_fin",
+   "id": "right_fin",
+   "invertAxis": "xy",
+   "translate": [
+    0,
+    0,
+    0
+   ]
+  }
+ ]
+}
